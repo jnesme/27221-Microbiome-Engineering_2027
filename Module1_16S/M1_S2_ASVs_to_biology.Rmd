@@ -1,0 +1,179 @@
+---
+title: "Module 1 — Session 2: From ASVs to biology"
+subtitle: "27221 Microbiome Engineering — Metabarcoding of wastewater treatment plant communities"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Before you start
+
+Last session you turned raw reads into an **ASV table**. Today you'll assign
+those ASVs a taxonomy using the **MiDAS 4** reference database (the
+purpose-built reference for wastewater treatment plant bacteria), attach your
+sample metadata, and ask a real engineering question: *does the microbial
+community track with how the plant is run?*
+
+By the end of today you should have produced **one figure** and a short
+written interpretation — that's your deliverable for this module.
+
+---
+
+## 0. Setup
+
+```{r libraries}
+library(dada2)
+library(phyloseq)
+library(tidyverse)
+library(vegan)
+```
+
+```{r config}
+# --- SESSION CONFIG: adjust if needed ---
+output_dir      <- "~/module1_output"                 # same folder you saved to in Session 1
+midas_ref_path  <- "/path/to/shared/wwtp_16S/MiDAS4.fasta"  # MiDAS 4 reference for assignTaxonomy()
+```
+
+```{r load-session1-output}
+seqtab.nochim <- readRDS(file.path(output_dir, "seqtab_nochim.rds"))
+metadata <- read_csv(file.path(output_dir, "metadata_used.csv"))
+dim(seqtab.nochim)
+```
+
+---
+
+## 1. Assign taxonomy against MiDAS 4
+
+```{r assign-taxonomy}
+taxa <- assignTaxonomy(seqtab.nochim, midas_ref_path, multithread = TRUE)
+head(taxa)
+```
+
+**Question:** How far down the taxonomic ranks (domain → species) do most of
+your ASVs get classified? MiDAS 4 was built specifically for WWTP bacteria —
+if you were to instead use a generic universal reference database, would you
+expect classification depth to improve, worsen, or stay the same, and why?
+
+---
+
+## 2. Build a phyloseq object
+
+`phyloseq` is a standard R package for holding an ASV/OTU table, a taxonomy
+table, and sample metadata together, and for computing common microbiome
+statistics/plots on them.
+
+```{r build-phyloseq}
+metadata_df <- metadata %>% column_to_rownames("sample_id")  # adjust column name if different
+
+ps <- phyloseq(
+  otu_table(seqtab.nochim, taxa_are_rows = FALSE),
+  sample_data(metadata_df),
+  tax_table(taxa)
+)
+ps
+```
+
+**`>> YOUR DECISION <<` — choose your engineering variable.**
+Look at the columns in `metadata`. Pick ONE variable to use as your grouping
+variable for the rest of today's analysis (e.g. plant/process type, country,
+or another available metadata field). Write it here:
+
+```{r choose-variable}
+grouping_variable <- "process_type"   # <-- replace with your chosen metadata column name
+```
+
+---
+
+## 3. Alpha diversity: how rich/even is each community?
+
+```{r alpha-diversity}
+plot_richness(ps, x = grouping_variable, measures = c("Observed", "Shannon")) +
+  theme_bw()
+```
+
+**Question:** Does diversity differ visibly across your grouping variable? Is
+that difference large relative to the spread *within* each group?
+
+---
+
+## 4. Beta diversity: how different are communities from each other?
+
+```{r ordination}
+ps_rel <- transform_sample_counts(ps, function(x) x / sum(x))  # relative abundance
+ord <- ordinate(ps_rel, method = "NMDS", distance = "bray")
+```
+
+```{r plot-ordination}
+plot_ordination(ps_rel, ord, color = grouping_variable) +
+  theme_bw()
+```
+
+**Question:** Do samples cluster by your grouping variable, or are they mixed
+together? What would clustering (or lack of it) imply about how strongly this
+engineering variable shapes the community?
+
+---
+
+## 5. Which taxa differ between groups?
+
+This step only makes sense if your grouping variable has (at least
+approximately) two groups. If you have more than two, pick two to compare, or
+ask your instructor for a multi-group approach.
+
+```{r top-taxa}
+# Collapse to genus level and keep the most abundant genera for a readable plot
+ps_genus <- tax_glom(ps_rel, taxrank = "Genus", NArm = FALSE)
+
+top_genera <- names(sort(taxa_sums(ps_genus), decreasing = TRUE))[1:15]
+ps_top <- prune_taxa(top_genera, ps_genus)
+
+plot_bar(ps_top, fill = "Genus", x = grouping_variable) +
+  theme_bw() +
+  labs(y = "Relative abundance")
+```
+
+```{r simple-test}
+# A simple (not multiple-testing-corrected) group comparison for one genus of interest.
+# Replace "GenusOfInterest" with a genus name you saw in the plot above.
+genus_of_interest <- "GenusOfInterest"
+
+abund_df <- psmelt(ps_top) %>%
+  filter(Genus == genus_of_interest)
+
+wilcox.test(Abundance ~ get(grouping_variable), data = abund_df)
+```
+
+**Question:** Is the genus you tested visibly enriched in one group in the bar
+plot above? Does the simple statistical test support that impression? (With
+this sample size, treat the p-value as a rough signal, not a definitive
+answer.)
+
+---
+
+## 6. Produce your deliverable
+
+**Choose ONE figure** from today (alpha diversity, ordination, or the top-taxa
+bar plot) that best supports a claim about how the microbial community
+relates to your chosen engineering variable.
+
+```{r save-deliverable}
+# Re-run/save your chosen plot here, e.g.:
+# ggsave(file.path(output_dir, "module1_deliverable.png"), width = 8, height = 5)
+```
+
+**Write your interpretation (2–5 sentences) below:**
+
+> *(Replace this line.) State which figure you're using, what pattern it
+> shows, and what an engineer/operator running this WWTP process could learn
+> or do differently based on it.*
+
+---
+
+## Wrap-up discussion
+
+- Which of today's steps involved a judgment call rather than a fixed rule?
+- If you had used a generic 16S reference database instead of MiDAS 4, do you
+  think your conclusions today would have changed? Why might a
+  purpose-built, ecosystem-specific reference matter here?

@@ -1,0 +1,232 @@
+---
+title: "Module 1 — Session 1: From raw reads to an ASV table"
+subtitle: "27221 Microbiome Engineering — Metabarcoding of wastewater treatment plant communities"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+## Before you start
+
+Today you will take **real raw 16S rRNA amplicon reads** from wastewater treatment
+plants (WWTPs) around the world and turn them into an **ASV table**: a matrix of
+exactly which microbial sequence variants were found, in which samples, and how
+often.
+
+You are not expected to write R code from scratch today. Every chunk below is
+already written. Your job is to **run each chunk, look at what it produces, and
+make a small number of justified decisions** — marked `>> YOUR DECISION <<` —
+based on the plots and tables you see. There is no single "correct" number for
+these decisions; what matters is that your choice is grounded in what the data
+show you.
+
+Run chunks one at a time (click the green "Run" arrow, or `Ctrl+Enter` /
+`Cmd+Enter`), and read the output before moving to the next chunk.
+
+---
+
+## 0. Setup
+
+```{r libraries}
+library(dada2)
+library(tidyverse)
+```
+
+```{r config}
+# --- SESSION CONFIG: adjust these paths if your instructor gives you different ones ---
+raw_reads_dir   <- "/path/to/shared/wwtp_16S/raw_reads"     # forward+reverse fastq.gz files
+metadata_path   <- "/path/to/shared/wwtp_16S/sample_metadata.csv"
+output_dir      <- "~/module1_output"                        # where YOUR results get saved
+dir.create(output_dir, showWarnings = FALSE)
+```
+
+```{r inspect-inputs}
+# Forward and reverse read files are expected to follow the pattern
+# SAMPLENAME_R1.fastq.gz / SAMPLENAME_R2.fastq.gz
+fnFs <- sort(list.files(raw_reads_dir, pattern = "_R1.fastq.gz$", full.names = TRUE))
+fnRs <- sort(list.files(raw_reads_dir, pattern = "_R2.fastq.gz$", full.names = TRUE))
+sample.names <- str_remove(basename(fnFs), "_R1.fastq.gz$")
+
+metadata <- read_csv(metadata_path)
+
+# Sanity check: do we have the same number of forward/reverse files, and do
+# they match the metadata table?
+length(fnFs); length(fnRs)
+head(metadata)
+```
+
+**Question:** How many samples do you have? Do the sample names in `metadata`
+match `sample.names`? (If not, stop here and flag it — everything downstream
+depends on this being correct.)
+
+---
+
+## 1. Look at read quality before doing anything else
+
+```{r quality-profiles}
+plotQualityProfile(fnFs[1:2])  # forward reads, first two samples
+plotQualityProfile(fnRs[1:2])  # reverse reads, first two samples
+```
+
+The green line is the median quality score at each position; the orange lines
+are the 25th/75th percentiles. Quality typically stays high for a while and
+then drops off toward the end of the read — this is normal for Illumina
+sequencing, not a problem with your samples.
+
+**`>> YOUR DECISION <<` — truncation length.**
+Look at the plots above. At roughly which position does quality drop below a
+score of ~30? Note down a sensible truncation length for forward reads
+(`truncLenF`) and reverse reads (`truncLenR`) — you want to cut off the
+low-quality tail, but forward + reverse reads still need to overlap enough to
+merge later (the amplicon region here is short enough that this is not usually
+a problem, but keep it in mind).
+
+```{r truncation-decision}
+truncLenF <- 0   # <-- replace 0 with your chosen value, based on the plot above
+truncLenR <- 0   # <-- replace 0 with your chosen value, based on the plot above
+```
+
+---
+
+## 2. Filter and trim
+
+```{r filter-trim}
+filtFs <- file.path(output_dir, "filtered", paste0(sample.names, "_F_filt.fastq.gz"))
+filtRs <- file.path(output_dir, "filtered", paste0(sample.names, "_R_filt.fastq.gz"))
+names(filtFs) <- sample.names
+names(filtRs) <- sample.names
+
+out <- filterAndTrim(
+  fnFs, filtFs, fnRs, filtRs,
+  truncLen = c(truncLenF, truncLenR),
+  maxN = 0,        # DADA2 requires no ambiguous bases
+  maxEE = c(2, 2),  # max expected errors per read (a stricter/looser choice affects yield vs. quality)
+  truncQ = 2,
+  rm.phix = TRUE,
+  compress = TRUE,
+  multithread = TRUE
+)
+out
+```
+
+**Question:** For each sample, what fraction of reads survived filtering
+(`reads.out / reads.in`)? Is that fraction roughly consistent across samples,
+or are some samples much worse? A sample losing the large majority of its
+reads here is worth flagging before you interpret anything from it later.
+
+---
+
+## 3. Learn the error model
+
+DADA2's core idea is to learn a model of how sequencing errors occur at each
+position/quality score, so it can tell a true biological variant apart from a
+sequencing error.
+
+```{r learn-errors}
+errF <- learnErrors(filtFs, multithread = TRUE)
+errR <- learnErrors(filtRs, multithread = TRUE)
+```
+
+```{r plot-errors}
+plotErrors(errF, nominalQ = TRUE)
+```
+
+**Question:** The black line is the fitted error model; the points are the
+observed error rates. Does the fitted line reasonably follow the observed
+points, and do error rates decrease as quality score increases (as expected)?
+If the fit looks poor, that's a signal something upstream (e.g. truncation
+length) may need revisiting.
+
+---
+
+## 4. Denoise (infer ASVs)
+
+```{r dada}
+dadaFs <- dada(filtFs, err = errF, multithread = TRUE)
+dadaRs <- dada(filtRs, err = errR, multithread = TRUE)
+```
+
+---
+
+## 5. Merge paired reads
+
+```{r merge}
+mergers <- mergePairs(dadaFs, filtFs, dadaRs, filtRs, verbose = TRUE)
+```
+
+**Question:** What fraction of reads merged successfully, on average? A low
+merge rate usually means the truncation lengths chosen in Step 1 left
+insufficient overlap between forward and reverse reads.
+
+---
+
+## 6. Build the sequence table
+
+```{r seqtab}
+seqtab <- makeSequenceTable(mergers)
+dim(seqtab)                       # samples x unique sequence variants
+table(nchar(getSequences(seqtab)))  # distribution of sequence lengths
+```
+
+**Question:** Do the sequence lengths cluster tightly around the expected
+amplicon length for this region, or is there a long tail of unexpectedly
+short/long sequences? Unexpected lengths are often a sign of non-specific
+amplification and can be filtered out.
+
+---
+
+## 7. Remove chimeras
+
+```{r chimeras}
+seqtab.nochim <- removeBimeraDenovo(seqtab, method = "consensus", multithread = TRUE, verbose = TRUE)
+dim(seqtab.nochim)
+sum(seqtab.nochim) / sum(seqtab)   # fraction of reads retained after chimera removal
+```
+
+---
+
+## 8. Track reads through the whole pipeline
+
+This is the single most important sanity-check table in a DADA2 workflow —
+always look at it before trusting your results.
+
+```{r track}
+getN <- function(x) sum(getUniques(x))
+track <- data.frame(
+  input      = out[, 1],
+  filtered   = out[, 2],
+  denoisedF  = sapply(dadaFs, getN),
+  denoisedR  = sapply(dadaRs, getN),
+  merged     = sapply(mergers, getN),
+  nonchim    = rowSums(seqtab.nochim)
+)
+rownames(track) <- sample.names
+track
+```
+
+**Question:** Is there any step where a sample loses a disproportionate
+fraction of reads compared to the others? If so, which step, and what would
+you check next?
+
+---
+
+## 9. Save your output for Session 2
+
+```{r save}
+saveRDS(seqtab.nochim, file.path(output_dir, "seqtab_nochim.rds"))
+write_csv(metadata, file.path(output_dir, "metadata_used.csv"))
+```
+
+---
+
+## Wrap-up discussion
+
+- What does one row of `seqtab.nochim` represent? What does one column
+  represent?
+- You made a handful of judgment calls today (truncation length, filtering
+  stringency). If a classmate had made slightly different choices, would you
+  expect wildly different biological conclusions later on? Why or why not?
+- Bring your saved `seqtab_nochim.rds` to Session 2 — that's where we turn
+  this table into biology.
