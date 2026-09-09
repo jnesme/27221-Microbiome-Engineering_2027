@@ -1,0 +1,3 @@
+# Raw sequencing data staged from SRA/ENA - too large for git, lives on the
+# shared HPC filesystem (see Module1_16S/M1_download_manifest.tsv to re-fetch)
+Module1_16S/raw_reads/
