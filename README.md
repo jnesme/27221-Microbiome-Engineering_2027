@@ -105,7 +105,7 @@ One figure (diversity plot, ordination, or differential abundance plot) + a shor
 ## Module 2 — Genome-Resolved Metagenomics: Plant-Root Synthetic Community
 
 ### Dataset
-- **Primary**: Selten et al. — shotgun metagenomics of a complex, defined plant-root SynCom (NCBI SRA BioProject **PRJNA1131994**), with known constituent isolate genomes serving as **ground truth** for bin recovery/validation — pedagogically valuable since students can check "did we get back what was put in?"
+- **Primary**: Selten et al. — shotgun metagenomics of a complex, defined plant-root SynCom (NCBI SRA BioProject **PRJNA1131994**), with known constituent isolate genomes serving as **ground truth** for bin recovery/validation — pedagogically valuable since students can check "did we get back what was put in?" *(preprint, as of Sep 2026 — bioRxiv [10.1101/2024.08.22.609090](https://www.biorxiv.org/content/10.1101/2024.08.22.609090), not yet peer-reviewed; the dataset itself is public and stable regardless.)*
 - **Bonus/bridge exercise**: the same samples were also sequenced by 16S amplicon (BioProject **PRJNA1191388**) — optional short comparison at the end of Session 2, contrasting what Module 1's amplicon approach would show vs. genome-resolved metagenomics on the *same* system.
 - **Framing story**: open Session 1's theory block with Carrión et al. 2019 (*Science*) — the 2-strain sugarbeet SynCom where metagenomics pinned a biocontrol mechanism to specific gene clusters — as a compact, well-known illustration of *why* genome-resolved metagenomics matters for engineered communities, before moving to the more complex dataset used for hands-on work.
 
