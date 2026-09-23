@@ -159,13 +159,63 @@ suggest about your assembly?
 
 ---
 
+## 6. A first look at binning (preview)
+
+Everything so far has been about *one* sample, with no information about how
+abundant each contig is *relative to the others* — and abundance across
+samples is the main signal real binning uses to group contigs into genomes.
+You don't have that yet; it's what the full, multi-sample profile in Session 2
+provides.
+
+But `anvi-interactive` doesn't strictly need coverage data to draw you a tree.
+Without it, anvi'o falls back to clustering contigs by **tetranucleotide
+frequency (TNF)** alone — the idea that different genomes tend to have
+subtly different 4-mer usage biases, even before you know anything about
+their abundance. It's a much weaker signal than coverage, but it's already
+there in the sequence itself, so let's look at it.
+
+```bash
+# A "blank" profile: no read mapping/coverage, just enough structure for
+# anvi-interactive to organize your contigs by TNF similarity
+anvi-profile \
+  -c $WORKDIR/${SAMPLE}-CONTIGS.db \
+  --blank-profile \
+  -S $SAMPLE \
+  -o $WORKDIR/${SAMPLE}-PROFILE
+```
+
+```bash
+anvi-interactive \
+  -c $WORKDIR/${SAMPLE}-CONTIGS.db \
+  -p $WORKDIR/${SAMPLE}-PROFILE/PROFILE.db \
+  --title "SynCom $SAMPLE - TNF preview"
+```
+
+This opens the same interactive interface you'll use for real binning in
+Session 2 — a browser tab (via ThinLinc) with your contigs arranged in a tree,
+plus a right-click "create a new bin" workflow. Nothing you select here is
+biologically meaningful yet (no coverage signal means no real evidence two
+contigs belong to the same genome), but the *interface* is identical.
+
+**Question:** Look at the tree. Do you see anything that looks like tight,
+well-separated clusters, or is it mostly a diffuse spread? Given what TNF can
+and can't tell you, is that what you'd expect? What specific piece of
+information, once you have the full multi-sample profile in Session 2, will
+let you upgrade "this looks vaguely clustered" into "this is very likely one
+genome"?
+
+---
+
 ## Wrap-up discussion
 
 - You've now built one small contigs database from one (or a few) subsampled
-  sample(s). In Session 2 you'll work with a full-scale, pre-built, merged
-  profile spanning the whole SynCom experiment — too large to assemble live.
+  sample(s), and gotten your first (coverage-free) look at anvi'o's binning
+  interface. In Session 2 you'll work with a full-scale, pre-built, merged
+  profile spanning the whole SynCom experiment — too large to assemble live —
+  and the same interface will actually mean something.
 - What was the practical bottleneck today: read volume, assembly time, or
   something else? That's exactly why the full dataset is precomputed for next
   session.
-- Keep your `${SAMPLE}-CONTIGS.db` — you'll compare what a small-scale, single
-  sample can tell you against the full profile in Session 2.
+- Keep your `${SAMPLE}-CONTIGS.db` and `${SAMPLE}-PROFILE/` — you'll compare
+  what a small-scale, single sample (and its TNF-only tree) can tell you
+  against the full, coverage-informed profile in Session 2.

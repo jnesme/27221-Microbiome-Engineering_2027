@@ -121,8 +121,15 @@ One figure (diversity plot, ordination, or differential abundance plot) + a shor
 |---|---|
 | 0:00–1:00 | **Theory**: shotgun vs. amplicon, assembly basics, what a contigs database is, the Carrión et al. framing story, why this matters for engineered/designed communities. |
 | 1:00–1:15 | Break |
-| 1:15–3:30 | **Hands-on** (terminal via ThinLinc, on a small pre-subsampled read set — small enough to finish live): QC (`fastp`) → quick assembly (`megahit`) → `anvi-gen-contigs-database` → `anvi-run-hmms` → gene calling / basic functional annotation. |
-| 3:30–4:00 | **Wrap-up**: first look at a contigs database via `anvi-display-contigs-stats` (opens an interactive browser view via ThinLinc — the full `anvi-interactive` binning session comes in Session 2, once a profile database exists). |
+| 1:15–3:30 | **Hands-on** (terminal via ThinLinc, on a small pre-subsampled read set — small enough to finish live): QC (`fastp`) → quick assembly (`megahit`) → `anvi-gen-contigs-database` → `anvi-run-hmms` → gene calling / basic functional annotation → a coverage-free preview of `anvi-interactive` (blank profile, contigs clustered by tetranucleotide frequency only) as a bridge into Session 2's real, coverage-based binning. |
+| 3:30–4:00 | **Wrap-up**: discuss the TNF-only tree students just saw — what it can and can't tell you without coverage data, and what Session 2's full multi-sample profile adds. |
+
+> **Instructor/TA note:** with `SRR29710017`'s 388 contigs and no coverage
+> signal, the TNF tree in the section 6 preview will very likely look like a
+> diffuse blob rather than tight clusters — that's expected, not a broken
+> demo. Steer the wrap-up discussion toward "*this* signal isn't enough" (the
+> discussion question is written to do this), not "binning doesn't work" —
+> the payoff lands in Session 2 once coverage is added.
 
 ### Session 2 (4h) — Precomputed profile → genome-resolved exploration
 | Time | Segment |
