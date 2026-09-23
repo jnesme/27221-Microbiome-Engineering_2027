@@ -15,3 +15,9 @@ Module1_16S/instructor_test_run/
 # bsub job logs
 Module2_MetaG/*.out
 Module2_MetaG/*.err
+
+# Session 1 live-demo sample, symlinked from raw_reads/ (see stage_session1_demo.sh)
+Module2_MetaG/raw_reads_subsampled/
+
+# Instructor-only pipeline validation run, not course material
+Module2_MetaG/instructor_test_run/

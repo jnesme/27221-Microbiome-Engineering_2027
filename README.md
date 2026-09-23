@@ -122,7 +122,7 @@ One figure (diversity plot, ordination, or differential abundance plot) + a shor
 | 0:00–1:00 | **Theory**: shotgun vs. amplicon, assembly basics, what a contigs database is, the Carrión et al. framing story, why this matters for engineered/designed communities. |
 | 1:00–1:15 | Break |
 | 1:15–3:30 | **Hands-on** (terminal via ThinLinc, on a small pre-subsampled read set — small enough to finish live): QC (`fastp`) → quick assembly (`megahit`) → `anvi-gen-contigs-database` → `anvi-run-hmms` → gene calling / basic functional annotation. |
-| 3:30–4:00 | **Wrap-up**: first look at a contigs database and the `anvi-interactive` interface (opened in browser via ThinLinc). |
+| 3:30–4:00 | **Wrap-up**: first look at a contigs database via `anvi-display-contigs-stats` (opens an interactive browser view via ThinLinc — the full `anvi-interactive` binning session comes in Session 2, once a profile database exists). |
 
 ### Session 2 (4h) — Precomputed profile → genome-resolved exploration
 | Time | Segment |

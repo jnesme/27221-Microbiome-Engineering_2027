@@ -35,10 +35,11 @@ available as ground truth.
 
 ```bash
 # Activate the shared conda environment (ask your instructor for the exact name if different)
-conda activate anvio-8
+conda activate anvio-9
 
 # --- SESSION CONFIG: adjust these paths if your instructor gives you different ones ---
-export RAW_READS_DIR=/path/to/shared/syncom_metagenomics/subsampled_reads   # small, live-processing subset
+export RAW_READS_DIR=/work3/josne/github/27221-Microbiome-Engineering_2027/Module2_MetaG/raw_reads_subsampled   # small, live-processing subset
+export SAMPLE=SRR29710017   # the sample you're working with today (LjSC SynCom, sequenced directly - no plant host)
 export WORKDIR=~/module2_output
 mkdir -p $WORKDIR
 cd $WORKDIR
@@ -83,10 +84,11 @@ duplication level)?
 
 ```bash
 # Example for a single sample — repeat, or loop, for each sample in your subset
+mkdir -p $WORKDIR/assembly   # megahit needs the parent dir to already exist
 megahit \
-  -1 $WORKDIR/qc/SAMPLE_R1.trimmed.fastq.gz \
-  -2 $WORKDIR/qc/SAMPLE_R2.trimmed.fastq.gz \
-  -o $WORKDIR/assembly/SAMPLE \
+  -1 $WORKDIR/qc/${SAMPLE}_R1.trimmed.fastq.gz \
+  -2 $WORKDIR/qc/${SAMPLE}_R2.trimmed.fastq.gz \
+  -o $WORKDIR/assembly/$SAMPLE \
   --min-contig-len 1000
 ```
 
@@ -98,7 +100,7 @@ downstream binning, and why?
 
 ```bash
 # Basic assembly stats
-seqkit stats $WORKDIR/assembly/SAMPLE/final.contigs.fa
+seqkit stats $WORKDIR/assembly/$SAMPLE/final.contigs.fa
 ```
 
 **Question:** How many contigs did you get, what's the N50, and what's the
@@ -116,14 +118,14 @@ taxonomy, HMM hits) in one place.
 ```bash
 # anvi'o requires simple contig deflines — reformat first
 anvi-script-reformat-fasta \
-  $WORKDIR/assembly/SAMPLE/final.contigs.fa \
-  -o $WORKDIR/assembly/SAMPLE/contigs-fixed.fa \
-  -l 1000 --simplify-names --report-file $WORKDIR/assembly/SAMPLE/rename-report.txt
+  $WORKDIR/assembly/$SAMPLE/final.contigs.fa \
+  -o $WORKDIR/assembly/$SAMPLE/contigs-fixed.fa \
+  -l 1000 --simplify-names --report-file $WORKDIR/assembly/$SAMPLE/rename-report.txt
 
 anvi-gen-contigs-database \
-  -f $WORKDIR/assembly/SAMPLE/contigs-fixed.fa \
-  -o $WORKDIR/SAMPLE-CONTIGS.db \
-  -n "SynCom sample SAMPLE"
+  -f $WORKDIR/assembly/$SAMPLE/contigs-fixed.fa \
+  -o $WORKDIR/${SAMPLE}-CONTIGS.db \
+  -n "SynCom sample $SAMPLE"
 ```
 
 ---
@@ -133,17 +135,17 @@ anvi-gen-contigs-database \
 ```bash
 # HMM search for bacterial/archaeal single-copy core genes — the backbone of
 # later completion/redundancy estimates for any bins you recover
-anvi-run-hmms -c $WORKDIR/SAMPLE-CONTIGS.db --num-threads 4
+anvi-run-hmms -c $WORKDIR/${SAMPLE}-CONTIGS.db --num-threads 4
 ```
 
 ```bash
 # Optional, if time allows: functional annotation
-anvi-run-ncbi-cogs -c $WORKDIR/SAMPLE-CONTIGS.db --num-threads 4
+anvi-run-ncbi-cogs -c $WORKDIR/${SAMPLE}-CONTIGS.db --num-threads 4
 ```
 
 ```bash
 # Quick summary of what's in the contigs database so far
-anvi-display-contigs-stats $WORKDIR/SAMPLE-CONTIGS.db
+anvi-display-contigs-stats $WORKDIR/${SAMPLE}-CONTIGS.db
 ```
 
 `anvi-display-contigs-stats` starts a small local web server — open the URL it
@@ -165,5 +167,5 @@ suggest about your assembly?
 - What was the practical bottleneck today: read volume, assembly time, or
   something else? That's exactly why the full dataset is precomputed for next
   session.
-- Keep your `SAMPLE-CONTIGS.db` — you'll compare what a small-scale, single
+- Keep your `${SAMPLE}-CONTIGS.db` — you'll compare what a small-scale, single
   sample can tell you against the full profile in Session 2.
