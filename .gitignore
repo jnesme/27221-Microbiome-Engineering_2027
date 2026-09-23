@@ -1,3 +1,17 @@
 # Raw sequencing data staged from SRA/ENA - too large for git, lives on the
 # shared HPC filesystem (see Module1_16S/M1_download_manifest.tsv to re-fetch)
 Module1_16S/raw_reads/
+
+# Raw sequencing data for Module 2 (see Module2_MetaG/M2_sample_selection.tsv
+# to re-fetch)
+Module2_MetaG/raw_reads/
+
+# MiDAS 4 taxonomy reference (127MB, re-download from midasfieldguide.org)
+Module1_16S/reference/
+
+# Instructor-only pipeline validation run, not course material
+Module1_16S/instructor_test_run/
+
+# bsub job logs
+Module2_MetaG/*.out
+Module2_MetaG/*.err

@@ -1,0 +1,16 @@
+sample_id,wwtp_id,continent,country,city,climate_type,process_general,process_detail,nitrification,denitrification,srt_days,fm_ratio,bod_inf_mgl,ann_temp_c,mlss_mgl,do_mgl,ph
+SRR8300938,CNXA1,Asia,China,Xian,Dwa,oxidation ditch,Oxidation ditch,Yes,Yes,22.0,0.349863154,250.0,13.88888889,3958.0,0.69,7.19
+SRR8300976,USDC1,North America,United States,Washington DC,Cfa,plug flow,Step-feed,Yes,Yes,2.5,0.183346341,172.72,15.0,1911.0,0.73,7.53
+SRR8301640,CNBJ3,Asia,China,Beijing,Dwa,plug flow,Plug flow,Yes,No,5.0,0.333493566,175.0,13.33333333,3200.0,6.28,7.17
+SRR8298218,CLVPT,South America,Chile,Santiago,Csb,complete mix,Complete mix ,No,No,1.93,0.891260444,297.0,15.0,1300.0,1.76,7.71
+SRR8298203,AUBR1,Australasia,Australia,Brisbane,Cfa,oxidation ditch,Oxidation ditch,Yes,Yes,21.0,0.119609349,327.0,20.0,3900.0,0.3,6.8
+SRR8301032,SESD1,Europe,Sweden,Falkenberg,Dfb,plug flow,Plug flow,Yes,Yes,20.7,0.248955379,193.0,10.0,4000.0,5.64,7.67
+SRR8301325,TWKS1,Asia,Taiwan (ROC),South Taiwan,Cfa,plug flow,Plug flow,No,No,12.5,0.123046875,45.0,25.6,2000.0,0.2,6.2
+SRR8301172,SGEA1,Asia,Singapore,Singapore,Af,plug flow,Plug flow,Yes,Yes,5.0,0.2765,200.0,26.98,3348.0,1.8,6.5
+SRR8301621,USVA1,North America,United States,Virginia Beach,Cfa,plug flow,Plug flow,No,No,1.3,0.681297585,250.0,16.0,1900.0,3.65,6.81
+SRR8301710,DEHE1,Europe,Germany,DEHE,Cfb,complete mix,Complete mix,Yes,Yes,10.0,0.149126448,265.0,12.0,3850.0,0.7,6.75
+SRR8301861,USNO2,North America,United States,Oklahoma City,Cfa,plug flow,Plug flow,No,No,65.0,0.010315899,72.5,15.0,6164.0,0.4,7.49
+SRR8298053,SAKB1,Africa,South Africa,Durban,Cfa,A2O,UCT,Yes,Yes,28.0,0.097134643,473.0,18.0,3780.0,1.1,7.35
+SRR8301341,CAON4,North America,Canada,Guelph,Dfb,AO,Complete mix EBPR,No,Yes,2.0,0.580019474,124.1,6.0,2528.0,3.32,7.38
+SRR8301495,CNDL1,Asia,China,Dalian,Dwa,plug flow,Plug flow,Yes,Yes,30.0,0.018972091,105.0,12.22222222,2165.0,5.3,6.49
+SRR8301678,USMI4,North America,United States,Ann Arbor,Dfa,oxidation ditch,Oxidation ditch with extended aeration,Yes,Yes,30.0,0.04542634,216.0,7.0,4250.0,7.5,7.7

@@ -12,7 +12,7 @@ proposed, pending time-budget approval from the course coordinator.
 |---|---|---|---|
 | **Duration** | 2 × 4h sessions | 2 × 4h sessions | 1 × 4h session |
 | **System** | Wastewater treatment plant (WWTP) activated sludge | Plant-root synthetic community (SynCom) | Same SynCom isolates as Module 2 (+ optionally its recovered MAGs) |
-| **Toolchain** | R / DADA2 / phyloseq | anvi'o (+ megahit, fastp for small-scale assembly) | anvi'o (pangenomics workflow) |
+| **Toolchain** | R / DADA2 / phyloseq / cutadapt | anvi'o (+ megahit, fastp for small-scale assembly) | anvi'o (pangenomics workflow) |
 | **Environment** | JupyterLab + IRkernel, via a shared conda env, accessed through a browser tab inside ThinLinc on the DTU HPC (Gbar/DCC) shared filesystem | Terminal + anvi'o interactive (browser) via ThinLinc on the same shared filesystem | Same as Module 2 — no new environment |
 | **Student background assumed** | No prior coding proficiency | No prior coding proficiency | Completed Module 2 |
 | **Deliverable** | One figure + short interpretation (per session pair) | One figure + short interpretation (per session pair) | One figure + short interpretation |
@@ -32,7 +32,8 @@ setup for **both** R- and anvi'o-based modules is therefore:
 
 - A **single, shared, pre-built conda environment** (not installed per
   student) staged on the shared filesystem, containing R + DADA2 + phyloseq +
-  vegan + tidyverse + IRkernel + JupyterLab for Module 1, and a separate
+  vegan + tidyverse + IRkernel + JupyterLab + cutadapt (primer removal, called
+  from R via `system2()`) for Module 1, and a separate
   anvi'o environment (anvi'o's own recommended conda-based install, plus
   megahit and fastp) for Modules 2 and 3.
 - Students activate the relevant environment and, for Module 1, open
@@ -85,7 +86,7 @@ setup for **both** R- and anvi'o-based modules is therefore:
 |---|---|
 | 0:00–1:00 | **Theory**: amplicon sequencing logic, primer choice/regions, sequencing error models, why ASVs (DADA2) supersede OTU clustering. |
 | 1:00–1:15 | Break |
-| 1:15–3:30 | **Hands-on** (JupyterLab, live execution): import demultiplexed FASTQs → quality profiling (`plotQualityProfile`) → filter/trim (guided reasoning on truncation length from quality plots) → error learning (`learnErrors`) → denoise (`dada`) → merge pairs → build sequence table → chimera removal → final ASV table. Every cell pre-written; blanks require a parameter choice justified from the preceding plot/output, not free coding. |
+| 1:15–3:30 | **Hands-on** (JupyterLab, live execution): import demultiplexed FASTQs → primer removal (`cutadapt`, strips the 515F/806R primers and heterogeneity spacers still present in the raw reads) → quality profiling (`plotQualityProfile`) → filter/trim (guided reasoning on truncation length from quality plots) → error learning (`learnErrors`) → denoise (`dada`) → merge pairs → build sequence table → chimera removal → final ASV table. Every cell pre-written; blanks require a parameter choice justified from the preceding plot/output, not free coding. |
 | 3:30–4:00 | **Wrap-up**: what does a row/column of an ASV table represent; sanity checks (read-tracking table through the pipeline). |
 
 ### Session 2 (4h) — ASVs → biology
@@ -178,7 +179,7 @@ the community (drop a strain) or not.
 ## Logistics checklist (pre-class, instructor-side)
 
 - [ ] Confirm ThinLinc access + shared filesystem paths for all enrolled students.
-- [ ] Build and stage a **shared, read-only conda environment** for Module 1 (R + DADA2 + phyloseq + vegan + tidyverse + IRkernel + JupyterLab) — all students activate the same env rather than building their own.
+- [ ] Build and stage a **shared, read-only conda environment** for Module 1 (R + DADA2 + phyloseq + vegan + tidyverse + IRkernel + JupyterLab + cutadapt) — all students activate the same env rather than building their own.
 - [ ] Build and stage a **shared anvi'o conda environment** for Modules 2/3 (anvi'o's own recommended install, plus `fastp` and `megahit`).
 - [ ] Module 1: finalize the ~12–20 sample WWTP subset from PRJNA509305 + the confirmed metadata columns from Supplementary Table 1; stage MiDAS 4 reference taxonomy files.
 - [ ] Module 2: select and stage a small subsampled read set from PRJNA1131994 for live Session 1 use; pre-build the full merged profile database for Session 2 (too heavy to build live); stage known isolate reference genomes and the `external-genomes.txt` manifest for ground-truth comparison; stage matched amplicon data (PRJNA1191388) if using the bonus bridge exercise.

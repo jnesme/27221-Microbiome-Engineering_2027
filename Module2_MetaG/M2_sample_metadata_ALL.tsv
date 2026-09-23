@@ -1,0 +1,443 @@
+run_accession	sample_accession	sample_alias	sample_group	host	host_species	inoculum	compartment	nutrient	experiment_round	growth_chamber	bio_replicate	read_count	fastq_gb	instrument_model	note
+SRR29709935	SAMN42329045	At_NS_ES_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	ES				B4	3247344	0.412	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709938	SAMN42329042	At_NS_ES_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	ES				B1	2686499	0.297	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709940	SAMN42329040	At_NS_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	high			B3	4426076	0.51	Illumina NovaSeq 6000	
+SRR29709941	SAMN42329039	At_NS_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	high			B2	5549144	0.639	Illumina NovaSeq 6000	
+SRR29709945	SAMN42328973	At_AtSC_ES_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	ES				B4	2660511	0.286	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709946	SAMN42329035	At_LjSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	low			B2	46579	0.006	Illumina NovaSeq 6000	
+SRR29709956	SAMN42328972	At_AtSC_ES_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	ES				B3	4032262	0.469	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709959	SAMN42329350	R1_At_GC2_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC2	B3	25266	0.003	Illumina NovaSeq 6000	
+SRR29709962	SAMN42329347	R1_At_GC2_LjSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES		R1	GC2	B4	1968161	0.201	Illumina NovaSeq 6000	
+SRR29709965	SAMN42329345	R1_At_GC2_LjSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES		R1	GC2	B1	1504400	0.16	Illumina NovaSeq 6000	
+SRR29709971	SAMN42329339	R1_At_GC2_AtSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES		R1	GC2	B4	921994	0.085	Illumina NovaSeq 6000	
+SRR29709975	SAMN42329003	At_HvSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	high			B2	192618	0.027	Illumina NovaSeq 6000	
+SRR29709994	SAMN42329244	Lj_LjSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	low			B3	2083753	0.275	Illumina NovaSeq 6000	
+SRR29709996	SAMN42329242	Lj_LjSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	low			B1	4267997	0.561	Illumina NovaSeq 6000	
+SRR29710004	SAMN42329235	Lj_LjSC_NOD_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	low			B2	4761594	0.686	Illumina NovaSeq 6000	
+SRR29710008	SAMN42329231	Lj_LjSC_NOD_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	high			B2	406520	0.052	Illumina NovaSeq 6000	
+SRR29710017	SAMN42329175	Input_LjSC_B2	Input (inoculum sequenced directly, no plant)			LjSC					B2	375276	0.052	Illumina NovaSeq 6000	
+SRR29710021	SAMN42329171	Input_HvSC_B2	Input (inoculum sequenced directly, no plant)			HvSC					B2	1895482	0.256	Illumina NovaSeq 6000	
+SRR29710023	SAMN42329169	Input_AtSC_B4	Input (inoculum sequenced directly, no plant)			AtSC					B4	1943242	0.268	Illumina NovaSeq 6000	
+SRR29710026	SAMN42329166	Input_AtSC_B1	Input (inoculum sequenced directly, no plant)			AtSC					B1	1955881	0.264	Illumina NovaSeq 6000	
+SRR29710029	SAMN42329165	Hv_SSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	low			B4	3974545	0.504	Illumina NovaSeq 6000	
+SRR29710040	SAMN42329155	Hv_SSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	low			B2	2023431	0.258	Illumina NovaSeq 6000	
+SRR29710042	SAMN42329153	Hv_SSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	high			B4	1828731	0.259	Illumina NovaSeq 6000	
+SRR29710046	SAMN42329149	Hv_NS_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	low			B4	277542	0.037	Illumina NovaSeq 6000	
+SRR29710050	SAMN42328984	At_AtSC_RZ_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	RZ				B3	138547	0.021	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710053	SAMN42329143	Hv_NS_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	high			B2	346254	0.049	Illumina NovaSeq 6000	
+SRR29710054	SAMN42329142	Hv_NS_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	high			B1	2348579	0.381	Illumina NovaSeq 6000	
+SRR29710058	SAMN42329138	Hv_NS_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	low			B1	3846553	0.519	Illumina NovaSeq 6000	
+SRR29710061	SAMN42328983	At_AtSC_RZ_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	RZ				B2	203605	0.029	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710062	SAMN42329135	Hv_NS_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	high			B2	9725	0.001	Illumina NovaSeq 6000	
+SRR29710063	SAMN42329134	Hv_NS_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	high			B1	2667066	0.334	Illumina NovaSeq 6000	
+SRR29710064	SAMN42329133	Hv_LjSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	low			B4	139537	0.018	Illumina NovaSeq 6000	
+SRR29710065	SAMN42329132	Hv_LjSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	low			B3	119050	0.016	Illumina NovaSeq 6000	
+SRR29710069	SAMN42329020	At_LjSC_ES_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	ES				B3	2015634	0.234	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710075	SAMN42329015	At_LjSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	high			B2	4807473	0.54	Illumina NovaSeq 6000	
+SRR29710078	SAMN42329012	At_HvSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	low			B3	45450	0.008	Illumina NovaSeq 6000	
+SRR29710085	SAMN42329403	R1_Lj_GC2_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC2	B4	3760685	0.466	Illumina NovaSeq 6000	
+SRR29710095	SAMN42329324	NP_SSC_high_B3	No-plant control (inoculum in sterile substrate, no host)			SSC		high			B3	97191	0.013	Illumina NovaSeq 6000	
+SRR29710107	SAMN42329313	NP_NS_AM_low_B4	No-plant control, natural-soil inoculum			NS (natural soil)	AM	low			B4	164605	0.023	Illumina NovaSeq 6000	
+SRR29710109	SAMN42329311	NP_NS_AM_low_B2	No-plant control, natural-soil inoculum			NS (natural soil)	AM	low			B2	532992	0.075	Illumina NovaSeq 6000	
+SRR29710119	SAMN42329065	At_SSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	high			B4	1596330	0.158	Illumina NovaSeq 6000	
+SRR29710123	SAMN42329061	At_NS_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	low			B4	185621	0.027	Illumina NovaSeq 6000	
+SRR29710130	SAMN42329055	At_NS_RZ_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	RZ				B2	121748	0.017	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710131	SAMN42329054	At_NS_RZ_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	RZ				B1	139193	0.02	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710134	SAMN42329051	At_NS_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	high			B2	127242	0.019	Illumina NovaSeq 6000	
+SRR29710138	SAMN42329047	At_NS_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	low			B2	2661908	0.296	Illumina NovaSeq 6000	
+SRR29710140	SAMN42329046	At_NS_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	low			B1	3366972	0.389	Illumina NovaSeq 6000	
+SRR29710148	SAMN42329366	R1_Hv_GC3_HvSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES		R1	GC3	B2	4822959	0.577	Illumina NovaSeq 6000	
+SRR29710160	SAMN42329356	R1_Hv_GC1_SSC_RZ_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ		R1	GC1	B1	20189	0.004	Illumina NovaSeq 6000	
+SRR29710162	SAMN42329355	R1_Hv_GC1_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC1	B4	4366340	0.511	Illumina NovaSeq 6000	
+SRR29710176	SAMN42329269	Lj_SSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	low			B4	8955652	1.014	Illumina NovaSeq 6000	
+SRR29710192	SAMN42328995	At_HvSC_ES_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	ES				B2	2967483	0.322	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710197	SAMN42329203	Lj_HvSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	low			B2	1782143	0.205	Illumina NovaSeq 6000	
+SRR29710202	SAMN42329198	Lj_HvSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	high			B1	2568006	0.349	Illumina NovaSeq 6000	
+SRR29710204	SAMN42329196	Lj_AtSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	low			B3	1727791	0.216	Illumina NovaSeq 6000	
+SRR29710206	SAMN42329195	Lj_AtSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	low			B2	1641174	0.234	Illumina NovaSeq 6000	
+SRR29710207	SAMN42329194	Lj_AtSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	low			B1	3120887	0.414	Illumina NovaSeq 6000	
+SRR29710218	SAMN42329184	Lj_AtSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	high			B3	1879679	0.279	Illumina NovaSeq 6000	
+SRR29710221	SAMN42329181	Input_SSC_B4	Input (inoculum sequenced directly, no plant)			SSC					B4	2331433	0.307	Illumina NovaSeq 6000	
+SRR29710227	SAMN42329103	Hv_HvSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	high			B2	5209193	0.681	Illumina NovaSeq 6000	
+SRR29710229	SAMN42329101	Hv_AtSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	low			B4	175994	0.025	Illumina NovaSeq 6000	
+SRR29710238	SAMN42329093	Hv_AtSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	low			B4	2196156	0.275	Illumina NovaSeq 6000	
+SRR29710241	SAMN42329090	Hv_AtSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	low			B1	2897919	0.361	Illumina NovaSeq 6000	
+SRR29710248	SAMN42329396	R1_Lj_GC1_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC1	B3	235158	0.046	Illumina NovaSeq 6000	
+SRR29710249	SAMN42329009	At_HvSC_RZ_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	RZ				B4	289808	0.044	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710252	SAMN42329393	R1_Lj_GC1_LjSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES		R1	GC1	B4	3195334	0.342	Illumina NovaSeq 6000	
+SRR29710266	SAMN42329380	R1_Input_LjSC	Input (inoculum sequenced directly, no plant)			LjSC			R1			2086496	0.414	Illumina NovaSeq 6000	
+SRR29710274	SAMN42329301	NP_HvSC_low_B4	No-plant control (inoculum in sterile substrate, no host)			HvSC		low			B4	65079	0.009	Illumina NovaSeq 6000	
+SRR29710283	SAMN42329293	NP_AtSC_low_B4	No-plant control (inoculum in sterile substrate, no host)			AtSC		low			B4	222773	0.03	Illumina NovaSeq 6000	
+SRR29710285	SAMN42329291	NP_AtSC_low_B2	No-plant control (inoculum in sterile substrate, no host)			AtSC		low			B2	39777	0.005	Illumina NovaSeq 6000	
+SRR29710291	SAMN42328998	At_HvSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	low			B1	99375	0.011	Illumina NovaSeq 6000	
+SRR29710298	SAMN42329279	Lj_SSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	high			B2	2575348	0.327	Illumina NovaSeq 6000	
+SRR29710304	SAMN42329225	Lj_LjSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	high			B4	2723192	0.363	Illumina NovaSeq 6000	
+SRR29710321	SAMN42329209	Lj_HvSC_NOD_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	high			B4	1835168	0.256	Illumina NovaSeq 6000	
+SRR29710333	SAMN42329125	Hv_LjSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	low			B4	1751983	0.216	Illumina NovaSeq 6000	
+SRR29710335	SAMN42329123	Hv_LjSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	low			B2	3602715	0.467	Illumina NovaSeq 6000	
+SRR29710336	SAMN42329122	Hv_LjSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	low			B1	2046711	0.27	Illumina NovaSeq 6000	
+SRR29710338	SAMN42329120	Hv_LjSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	high			B3	3737330	0.504	Illumina NovaSeq 6000	
+SRR29710347	SAMN42329112	Hv_HvSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	high			B3	2480247	0.33	Illumina NovaSeq 6000	
+SRR29710349	SAMN42329110	Hv_HvSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	high			B1	3869345	0.518	Illumina NovaSeq 6000	
+SRR29710353	SAMN42329084	At_SSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	low			B3	25714	0.004	Illumina NovaSeq 6000	
+SRR29710355	SAMN42329082	At_SSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	low			B1	1021	0.0	Illumina NovaSeq 6000	
+SRR29710357	SAMN42329080	At_SSC_RZ_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	RZ				B3	159441	0.023	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710363	SAMN42329075	At_SSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	high			B2	60224	0.008	Illumina NovaSeq 6000	
+SRR29710365	SAMN42329073	At_SSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	low			B4	2599477	0.28	Illumina NovaSeq 6000	
+SRR29710368	SAMN42329070	At_SSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	low			B1	1120968	0.113	Illumina NovaSeq 6000	
+SRR29710370	SAMN42329068	At_SSC_ES_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	ES				B3	175892	0.021	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710372	SAMN42329066	At_SSC_ES_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	ES				B1	2756297	0.306	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709942	SAMN42329038	At_NS_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	high			B1	2992187	0.339	Illumina NovaSeq 6000	
+SRR29709948	SAMN42329033	At_LjSC_RZ_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	RZ				B4	219708	0.031	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709949	SAMN42329032	At_LjSC_RZ_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	RZ				B3	95544	0.014	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709950	SAMN42329031	At_LjSC_RZ_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	RZ				B2	159736	0.022	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709958	SAMN42329024	At_LjSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	low			B3	1267988	0.177	Illumina NovaSeq 6000	
+SRR29709960	SAMN42329349	R1_At_GC2_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC2	B2	93356	0.011	Illumina NovaSeq 6000	
+SRR29709976	SAMN42329335	R1_At_GC1_SSC_RZ_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ		R1	GC1	B4	316916	0.069	Illumina NovaSeq 6000	
+SRR29709982	SAMN42329329	NP_SSC_low_B4	No-plant control (inoculum in sterile substrate, no host)			SSC		low			B4	32168	0.004	Illumina NovaSeq 6000	
+SRR29709995	SAMN42329243	Lj_LjSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	low			B2	1914833	0.253	Illumina NovaSeq 6000	
+SRR29710000	SAMN42329238	Lj_LjSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	high			B1	4166630	0.538	Illumina NovaSeq 6000	
+SRR29710002	SAMN42329236	Lj_LjSC_NOD_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	low			B3	4251663	0.568	Illumina NovaSeq 6000	
+SRR29710009	SAMN42329230	Lj_LjSC_NOD_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	high			B1	1757710	0.21	Illumina NovaSeq 6000	
+SRR29710012	SAMN42329179	Input_SSC_B2	Input (inoculum sequenced directly, no plant)			SSC					B2	1368143	0.185	Illumina NovaSeq 6000	
+SRR29710014	SAMN42329177	Input_LjSC_B4	Input (inoculum sequenced directly, no plant)			LjSC					B4	3521517	0.464	Illumina NovaSeq 6000	
+SRR29710024	SAMN42329168	Input_AtSC_B3	Input (inoculum sequenced directly, no plant)			AtSC					B3	342298	0.062	Illumina NovaSeq 6000	
+SRR29710025	SAMN42329167	Input_AtSC_B2	Input (inoculum sequenced directly, no plant)			AtSC					B2	3056954	0.406	Illumina NovaSeq 6000	
+SRR29710030	SAMN42329164	Hv_SSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	low			B3	1712761	0.221	Illumina NovaSeq 6000	
+SRR29710031	SAMN42329163	Hv_SSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	low			B2	6551996	0.844	Illumina NovaSeq 6000	
+SRR29710032	SAMN42329162	Hv_SSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	low			B1	271728	0.034	Illumina NovaSeq 6000	
+SRR29710033	SAMN42329161	Hv_SSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	high			B4	2417783	0.318	Illumina NovaSeq 6000	
+SRR29710036	SAMN42329158	Hv_SSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	high			B1	1318282	0.179	Illumina NovaSeq 6000	
+SRR29710043	SAMN42329152	Hv_SSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	high			B3	2128201	0.273	Illumina NovaSeq 6000	
+SRR29710051	SAMN42329145	Hv_NS_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	high			B4	3552340	0.466	Illumina NovaSeq 6000	
+SRR29710052	SAMN42329144	Hv_NS_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	high			B3	5198123	0.683	Illumina NovaSeq 6000	
+SRR29710055	SAMN42329141	Hv_NS_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	low			B4	4494275	0.567	Illumina NovaSeq 6000	
+SRR29710059	SAMN42329137	Hv_NS_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	high			B4	3657780	0.521	Illumina NovaSeq 6000	
+SRR29710060	SAMN42329136	Hv_NS_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	high			B3	3873946	0.514	Illumina NovaSeq 6000	
+SRR29710067	SAMN42329022	At_LjSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	low			B1	2724412	0.29	Illumina NovaSeq 6000	
+SRR29710080	SAMN42329407	R1_Lj_GC3_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC3	B4	1105245	0.201	Illumina NovaSeq 6000	
+SRR29710082	SAMN42329010	At_HvSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	low			B1	80960	0.012	Illumina NovaSeq 6000	
+SRR29710083	SAMN42329405	R1_Lj_GC3_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC3	B2	159919	0.027	Illumina NovaSeq 6000	
+SRR29710086	SAMN42329402	R1_Lj_GC2_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC2	B3	234711	0.027	Illumina NovaSeq 6000	
+SRR29710094	SAMN42329325	NP_SSC_high_B4	No-plant control (inoculum in sterile substrate, no host)			SSC		high			B4	104193	0.014	Illumina NovaSeq 6000	
+SRR29710100	SAMN42329319	NP_NS_low_GC2_B2	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC2	B2	66198	0.01	Illumina NovaSeq 6000	
+SRR29710101	SAMN42329318	NP_NS_low_GC2_B1	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC2	B1	276826	0.038	Illumina NovaSeq 6000	
+SRR29710104	SAMN42329001	At_HvSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	low			B4	1058433	0.109	Illumina NovaSeq 6000	
+SRR29710110	SAMN42329310	NP_NS_AM_low_B1	No-plant control, natural-soil inoculum			NS (natural soil)	AM	low			B1	1510138	0.206	Illumina NovaSeq 6000	
+SRR29710112	SAMN42329308	NP_LjSC_low_B3	No-plant control (inoculum in sterile substrate, no host)			LjSC		low			B3	2255517	0.311	Illumina NovaSeq 6000	
+SRR29710113	SAMN42329307	NP_LjSC_low_B2	No-plant control (inoculum in sterile substrate, no host)			LjSC		low			B2	229441	0.032	Illumina NovaSeq 6000	
+SRR29710114	SAMN42329306	NP_LjSC_low_B1	No-plant control (inoculum in sterile substrate, no host)			LjSC		low			B1	324477	0.044	Illumina NovaSeq 6000	
+SRR29710115	SAMN42329000	At_HvSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	low			B3	2221852	0.224	Illumina NovaSeq 6000	
+SRR29710118	SAMN42329303	NP_LjSC_high_B2	No-plant control (inoculum in sterile substrate, no host)			LjSC		high			B2	30878	0.004	Illumina NovaSeq 6000	
+SRR29710121	SAMN42329063	At_SSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	high			B2	1215192	0.129	Illumina NovaSeq 6000	
+SRR29710126	SAMN42329058	At_NS_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	low			B1	41966	0.006	Illumina NovaSeq 6000	
+SRR29710128	SAMN42329056	At_NS_RZ_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	RZ				B3	47068	0.007	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710135	SAMN42329050	At_NS_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	high			B1	93482	0.013	Illumina NovaSeq 6000	
+SRR29710139	SAMN42329374	R1_Hv_GC3_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC3	B2	442523	0.087	Illumina NovaSeq 6000	
+SRR29710142	SAMN42329372	R1_Hv_GC3_LjSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES		R1	GC3	B4	96336	0.012	Illumina NovaSeq 6000	
+SRR29710147	SAMN42329367	R1_Hv_GC3_HvSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES		R1	GC3	B3	4023308	0.476	Illumina NovaSeq 6000	
+SRR29710149	SAMN42329006	At_HvSC_RZ_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	RZ				B1	131618	0.019	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710155	SAMN42329361	R1_Hv_GC3_AtSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES		R1	GC3	B1	4646493	0.545	Illumina NovaSeq 6000	
+SRR29710157	SAMN42329359	R1_Hv_GC2_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC2	B3	3543776	0.416	Illumina NovaSeq 6000	
+SRR29710168	SAMN42329276	Lj_SSC_NOD_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	low			B3	2752201	0.336	Illumina NovaSeq 6000	
+SRR29710175	SAMN42329270	Lj_SSC_NOD_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	high			B1	2212550	0.245	Illumina NovaSeq 6000	
+SRR29710177	SAMN42329268	Lj_SSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	low			B3	1357631	0.153	Illumina NovaSeq 6000	
+SRR29710181	SAMN42328969	At_AtSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	high			B4	2949759	0.319	Illumina NovaSeq 6000	
+SRR29710185	SAMN42329262	Lj_SSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	high			B1	1963806	0.245	Illumina NovaSeq 6000	
+SRR29710186	SAMN42329261	Lj_NS_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	low			B4	103131	0.014	Illumina NovaSeq 6000	
+SRR29710199	SAMN42329201	Lj_HvSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	high			B4	1907912	0.243	Illumina NovaSeq 6000	
+SRR29710200	SAMN42329200	Lj_HvSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	high			B3	2585043	0.316	Illumina NovaSeq 6000	
+SRR29710201	SAMN42329199	Lj_HvSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	high			B2	1025842	0.134	Illumina NovaSeq 6000	
+SRR29710212	SAMN42329189	Lj_AtSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	low			B4	2320366	0.267	Illumina NovaSeq 6000	
+SRR29710215	SAMN42329186	Lj_AtSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	low			B1	102337	0.013	Illumina NovaSeq 6000	
+SRR29710222	SAMN42329107	Hv_HvSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	low			B2	10337461	1.214	Illumina NovaSeq 6000	
+SRR29710231	SAMN42329099	Hv_AtSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	low			B2	193540	0.027	Illumina NovaSeq 6000	
+SRR29710233	SAMN42329097	Hv_AtSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	high			B4	4006496	0.564	Illumina NovaSeq 6000	
+SRR29710237	SAMN42329094	Hv_AtSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	high			B1	4288093	0.627	Illumina NovaSeq 6000	
+SRR29710242	SAMN42329089	Hv_AtSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	high			B4	2185608	0.285	Illumina NovaSeq 6000	
+SRR29710256	SAMN42329389	R1_Lj_GC1_HvSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES		R1	GC1	B4	2289417	0.283	Illumina NovaSeq 6000	
+SRR29710280	SAMN42328999	At_HvSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	low			B2	841745	0.085	Illumina NovaSeq 6000	
+SRR29710284	SAMN42329292	NP_AtSC_low_B3	No-plant control (inoculum in sterile substrate, no host)			AtSC		low			B3	71340	0.01	Illumina NovaSeq 6000	
+SRR29710286	SAMN42329290	NP_AtSC_low_B1	No-plant control (inoculum in sterile substrate, no host)			AtSC		low			B1	29345	0.004	Illumina NovaSeq 6000	
+SRR29710289	SAMN42329287	NP_AtSC_high_B2	No-plant control (inoculum in sterile substrate, no host)			AtSC		high			B2	101331	0.014	Illumina NovaSeq 6000	
+SRR29710290	SAMN42329286	NP_AtSC_high_B1	No-plant control (inoculum in sterile substrate, no host)			AtSC		high			B1	127106	0.018	Illumina NovaSeq 6000	
+SRR29710297	SAMN42329280	Lj_SSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	high			B3	4270234	0.538	Illumina NovaSeq 6000	
+SRR29710299	SAMN42329278	Lj_SSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	high			B1	190591	0.025	Illumina NovaSeq 6000	
+SRR29710302	SAMN42329226	Lj_LjSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	low			B1	5121853	0.627	Illumina NovaSeq 6000	
+SRR29710307	SAMN42329222	Lj_LjSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	high			B1	2654203	0.308	Illumina NovaSeq 6000	
+SRR29710315	SAMN42329215	Lj_HvSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	high			B2	2687442	0.351	Illumina NovaSeq 6000	
+SRR29710325	SAMN42328990	At_HvSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	high			B1	1286135	0.148	Illumina NovaSeq 6000	
+SRR29710331	SAMN42329126	Hv_LjSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	high			B1	4558785	0.616	Illumina NovaSeq 6000	
+SRR29710337	SAMN42329121	Hv_LjSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	high			B4	2768550	0.359	Illumina NovaSeq 6000	
+SRR29710339	SAMN42329119	Hv_LjSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	high			B2	4465116	0.587	Illumina NovaSeq 6000	
+SRR29710341	SAMN42329117	Hv_HvSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	low			B4	54178	0.008	Illumina NovaSeq 6000	
+SRR29710343	SAMN42328981	At_AtSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	high			B4	165158	0.021	Illumina NovaSeq 6000	
+SRR29710350	SAMN42329109	Hv_HvSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	low			B4	6404735	0.748	Illumina NovaSeq 6000	
+SRR29710358	SAMN42329079	At_SSC_RZ_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	RZ				B2	217995	0.031	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710374	SAMN42328967	At_AtSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	high			B2	3849387	0.449	Illumina NovaSeq 6000	
+SRR29709947	SAMN42329034	At_LjSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	low			B1	114485	0.017	Illumina NovaSeq 6000	
+SRR29709951	SAMN42329030	At_LjSC_RZ_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	RZ				B1	167519	0.023	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709953	SAMN42329028	At_LjSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	high			B3	25498	0.004	Illumina NovaSeq 6000	
+SRR29709954	SAMN42329027	At_LjSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	high			B2	2234263	0.297	Illumina NovaSeq 6000	
+SRR29709961	SAMN42329348	R1_At_GC2_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC2	B1	1894	0.0	Illumina NovaSeq 6000	
+SRR29709966	SAMN42329344	R1_At_GC2_HvSC_ES_B5	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES		R1	GC2	B5	3781410	0.449	Illumina NovaSeq 6000	
+SRR29709968	SAMN42329342	R1_At_GC2_HvSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES		R1	GC2	B2	566544	0.055	Illumina NovaSeq 6000	
+SRR29709969	SAMN42329341	R1_At_GC2_HvSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES		R1	GC2	B1	4916314	0.444	Illumina NovaSeq 6000	
+SRR29709970	SAMN42329340	R1_At_GC2_AtSC_ES_B5	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES		R1	GC2	B5	1164303	0.137	Illumina NovaSeq 6000	
+SRR29709974	SAMN42329336	R1_At_GC2_AtSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES		R1	GC2	B1	1161605	0.118	Illumina NovaSeq 6000	
+SRR29709991	SAMN42329246	Lj_NS_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	high			B1	108876	0.015	Illumina NovaSeq 6000	
+SRR29709992	SAMN42328994	At_HvSC_ES_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	ES				B1	2947804	0.317	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709993	SAMN42329245	Lj_LjSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	low			B4	3644217	0.463	Illumina NovaSeq 6000	
+SRR29709997	SAMN42329241	Lj_LjSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	high			B4	7079550	0.972	Illumina NovaSeq 6000	
+SRR29709999	SAMN42329239	Lj_LjSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	high			B2	4408074	0.576	Illumina NovaSeq 6000	
+SRR29710001	SAMN42329237	Lj_LjSC_NOD_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	low			B4	3755153	0.453	Illumina NovaSeq 6000	
+SRR29710007	SAMN42329232	Lj_LjSC_NOD_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	high			B3	5283999	0.706	Illumina NovaSeq 6000	
+SRR29710011	SAMN42329180	Input_SSC_B3	Input (inoculum sequenced directly, no plant)			SSC					B3	1840967	0.245	Illumina NovaSeq 6000	
+SRR29710013	SAMN42329178	Input_SSC_B1	Input (inoculum sequenced directly, no plant)			SSC					B1	2429415	0.328	Illumina NovaSeq 6000	
+SRR29710015	SAMN42329176	Input_LjSC_B3	Input (inoculum sequenced directly, no plant)			LjSC					B3	132964	0.018	Illumina NovaSeq 6000	
+SRR29710016	SAMN42328987	At_AtSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	low			B2	112400	0.019	Illumina NovaSeq 6000	
+SRR29710022	SAMN42329170	Input_HvSC_B1	Input (inoculum sequenced directly, no plant)			HvSC					B1	1386028	0.181	Illumina NovaSeq 6000	
+SRR29710039	SAMN42328985	At_AtSC_RZ_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	RZ				B4	8620	0.001	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710044	SAMN42329151	Hv_SSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	high			B2	1626561	0.201	Illumina NovaSeq 6000	
+SRR29710072	SAMN42329017	At_LjSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	high			B4	3604535	0.38	Illumina NovaSeq 6000	
+SRR29710073	SAMN42329016	At_LjSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	high			B3	2058114	0.228	Illumina NovaSeq 6000	
+SRR29710077	SAMN42329013	At_HvSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	low			B4	66340	0.009	Illumina NovaSeq 6000	
+SRR29710079	SAMN42329011	At_HvSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	low			B2	77047	0.011	Illumina NovaSeq 6000	
+SRR29710088	SAMN42329400	R1_Lj_GC2_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC2	B1	3432783	0.424	Illumina NovaSeq 6000	
+SRR29710092	SAMN42329326	NP_SSC_low_B1	No-plant control (inoculum in sterile substrate, no host)			SSC		low			B1	37865	0.005	Illumina NovaSeq 6000	
+SRR29710096	SAMN42329323	NP_SSC_high_B2	No-plant control (inoculum in sterile substrate, no host)			SSC		high			B2	126230	0.018	Illumina NovaSeq 6000	
+SRR29710099	SAMN42329320	NP_NS_low_GC2_B3	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC2	B3	70568	0.01	Illumina NovaSeq 6000	
+SRR29710111	SAMN42329309	NP_LjSC_low_B4	No-plant control (inoculum in sterile substrate, no host)			LjSC		low			B4	3475913	0.445	Illumina NovaSeq 6000	
+SRR29710117	SAMN42329304	NP_LjSC_high_B3	No-plant control (inoculum in sterile substrate, no host)			LjSC		high			B3	49099	0.006	Illumina NovaSeq 6000	
+SRR29710125	SAMN42329059	At_NS_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	low			B2	11710	0.002	Illumina NovaSeq 6000	
+SRR29710136	SAMN42329049	At_NS_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	low			B4	4110132	0.496	Illumina NovaSeq 6000	
+SRR29710143	SAMN42329371	R1_Hv_GC3_LjSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES		R1	GC3	B3	1076836	0.126	Illumina NovaSeq 6000	
+SRR29710144	SAMN42329370	R1_Hv_GC3_LjSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES		R1	GC3	B2	3641677	0.438	Illumina NovaSeq 6000	
+SRR29710150	SAMN42328970	At_AtSC_ES_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	ES				B1	3629406	0.388	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710153	SAMN42329363	R1_Hv_GC3_AtSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES		R1	GC3	B3	4106301	0.492	Illumina NovaSeq 6000	
+SRR29710163	SAMN42329354	R1_Hv_GC1_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC1	B3	1217054	0.255	Illumina NovaSeq 6000	
+SRR29710171	SAMN42329274	Lj_SSC_NOD_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	low			B1	6762200	0.802	Illumina NovaSeq 6000	
+SRR29710174	SAMN42329271	Lj_SSC_NOD_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	high			B2	2508045	0.283	Illumina NovaSeq 6000	
+SRR29710179	SAMN42329266	Lj_SSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	low			B1	1980083	0.233	Illumina NovaSeq 6000	
+SRR29710187	SAMN42329260	Lj_NS_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	low			B3	105527	0.015	Illumina NovaSeq 6000	
+SRR29710194	SAMN42329205	Lj_HvSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	low			B4	1728240	0.19	Illumina NovaSeq 6000	
+SRR29710205	SAMN42328989	At_AtSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	low			B4	282339	0.041	Illumina NovaSeq 6000	
+SRR29710209	SAMN42329192	Lj_AtSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	high			B3	1596799	0.217	Illumina NovaSeq 6000	
+SRR29710216	SAMN42328988	At_AtSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	low			B3	151754	0.024	Illumina NovaSeq 6000	
+SRR29710219	SAMN42329183	Lj_AtSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	high			B2	3676826	0.492	Illumina NovaSeq 6000	
+SRR29710223	SAMN42329106	Hv_HvSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	low			B1	8938000	1.061	Illumina NovaSeq 6000	
+SRR29710224	SAMN42328980	At_AtSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	high			B3	49265	0.007	Illumina NovaSeq 6000	
+SRR29710226	SAMN42329104	Hv_HvSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	high			B3	4774015	0.64	Illumina NovaSeq 6000	
+SRR29710234	SAMN42329096	Hv_AtSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	high			B3	3206776	0.431	Illumina NovaSeq 6000	
+SRR29710235	SAMN42328979	At_AtSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	high			B2	64268	0.009	Illumina NovaSeq 6000	
+SRR29710247	SAMN42329397	R1_Lj_GC1_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC1	B4	855192	0.113	Illumina NovaSeq 6000	
+SRR29710254	SAMN42329391	R1_Lj_GC1_LjSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES		R1	GC1	B2	2591405	0.236	Illumina NovaSeq 6000	
+SRR29710255	SAMN42329390	R1_Lj_GC1_LjSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES		R1	GC1	B1	37079	0.004	Illumina NovaSeq 6000	
+SRR29710259	SAMN42329386	R1_Lj_GC1_HvSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES		R1	GC1	B1	3554966	0.327	Illumina NovaSeq 6000	
+SRR29710260	SAMN42329008	At_HvSC_RZ_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	RZ				B3	63096	0.009	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710261	SAMN42329385	R1_Lj_GC1_AtSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES		R1	GC1	B4	2765919	0.29	Illumina NovaSeq 6000	
+SRR29710263	SAMN42329383	R1_Lj_GC1_AtSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES		R1	GC1	B2	3379464	0.38	Illumina NovaSeq 6000	
+SRR29710272	SAMN42329375	R1_Hv_GC3_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC3	B3	200060	0.049	Illumina NovaSeq 6000	
+SRR29710273	SAMN42329302	NP_LjSC_high_B1	No-plant control (inoculum in sterile substrate, no host)			LjSC		high			B1	48559	0.007	Illumina NovaSeq 6000	
+SRR29710281	SAMN42329295	NP_HvSC_high_B2	No-plant control (inoculum in sterile substrate, no host)			HvSC		high			B2	65522	0.01	Illumina NovaSeq 6000	
+SRR29710282	SAMN42329294	NP_HvSC_high_B1	No-plant control (inoculum in sterile substrate, no host)			HvSC		high			B1	99631	0.014	Illumina NovaSeq 6000	
+SRR29710287	SAMN42329289	NP_AtSC_high_B4	No-plant control (inoculum in sterile substrate, no host)			AtSC		high			B4	34197	0.005	Illumina NovaSeq 6000	
+SRR29710294	SAMN42329283	Lj_SSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	low			B2	2233746	0.275	Illumina NovaSeq 6000	
+SRR29710295	SAMN42329282	Lj_SSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	low			B1	350385	0.045	Illumina NovaSeq 6000	
+SRR29710301	SAMN42329227	Lj_LjSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	low			B2	1255881	0.156	Illumina NovaSeq 6000	
+SRR29710303	SAMN42328992	At_HvSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	high			B3	2379739	0.242	Illumina NovaSeq 6000	
+SRR29710306	SAMN42329223	Lj_LjSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	high			B2	575249	0.069	Illumina NovaSeq 6000	
+SRR29710308	SAMN42329221	Lj_HvSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	low			B4	8550	0.001	Illumina NovaSeq 6000	
+SRR29710316	SAMN42329214	Lj_HvSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	high			B1	1844064	0.243	Illumina NovaSeq 6000	
+SRR29710317	SAMN42329213	Lj_HvSC_NOD_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	low			B4	8206413	0.932	Illumina NovaSeq 6000	
+SRR29710318	SAMN42329212	Lj_HvSC_NOD_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	low			B3	5349611	0.624	Illumina NovaSeq 6000	
+SRR29710322	SAMN42329208	Lj_HvSC_NOD_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	high			B3	114411	0.017	Illumina NovaSeq 6000	
+SRR29710326	SAMN42329131	Hv_LjSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	low			B2	84152	0.012	Illumina NovaSeq 6000	
+SRR29710327	SAMN42329130	Hv_LjSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	low			B1	100092	0.014	Illumina NovaSeq 6000	
+SRR29710329	SAMN42329128	Hv_LjSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	high			B3	3249466	0.454	Illumina NovaSeq 6000	
+SRR29710330	SAMN42329127	Hv_LjSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	high			B2	4469030	0.606	Illumina NovaSeq 6000	
+SRR29710332	SAMN42328982	At_AtSC_RZ_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	RZ				B1	195323	0.028	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710344	SAMN42329115	Hv_HvSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	low			B2	2082420	0.277	Illumina NovaSeq 6000	
+SRR29710348	SAMN42329111	Hv_HvSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	high			B2	2762499	0.372	Illumina NovaSeq 6000	
+SRR29710351	SAMN42329085	At_SSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	low			B4	92287	0.012	Illumina NovaSeq 6000	
+SRR29710354	SAMN42329083	At_SSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	low			B2	22336	0.003	Illumina NovaSeq 6000	
+SRR29710356	SAMN42329081	At_SSC_RZ_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	RZ				B4	163025	0.023	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710361	SAMN42329076	At_SSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	high			B3	22597	0.003	Illumina NovaSeq 6000	
+SRR29710362	SAMN42328977	At_AtSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	low			B4	935657	0.1	Illumina NovaSeq 6000	
+SRR29710366	SAMN42329072	At_SSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	low			B3	1409044	0.153	Illumina NovaSeq 6000	
+SRR29710367	SAMN42329071	At_SSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	low			B2	1776073	0.202	Illumina NovaSeq 6000	
+SRR29710371	SAMN42329067	At_SSC_ES_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	ES				B2	948650	0.105	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710373	SAMN42328976	At_AtSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	low			B3	243774	0.036	Illumina NovaSeq 6000	
+SRR29709936	SAMN42329044	At_NS_ES_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	ES				B3	4500109	0.504	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709937	SAMN42329043	At_NS_ES_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	ES				B2	4337116	0.546	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29709939	SAMN42329041	At_NS_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	high			B4	3130991	0.308	Illumina NovaSeq 6000	
+SRR29709943	SAMN42329037	At_LjSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	low			B4	119540	0.016	Illumina NovaSeq 6000	
+SRR29709944	SAMN42329036	At_LjSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	low			B3	95693	0.014	Illumina NovaSeq 6000	
+SRR29709952	SAMN42329029	At_LjSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	high			B4	271883	0.037	Illumina NovaSeq 6000	
+SRR29709957	SAMN42329025	At_LjSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	low			B4	2496760	0.26	Illumina NovaSeq 6000	
+SRR29709972	SAMN42329338	R1_At_GC2_AtSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES		R1	GC2	B3	998676	0.087	Illumina NovaSeq 6000	
+SRR29709977	SAMN42329334	R1_At_GC1_SSC_RZ_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ		R1	GC1	B3	7321	0.002	Illumina NovaSeq 6000	
+SRR29709978	SAMN42329333	R1_At_GC1_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC1	B4	817592	0.149	Illumina NovaSeq 6000	
+SRR29709979	SAMN42329332	R1_At_GC1_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC1	B3	148496	0.017	Illumina NovaSeq 6000	
+SRR29709980	SAMN42329331	R1_At_GC1_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC1	B2	41964	0.008	Illumina NovaSeq 6000	
+SRR29709983	SAMN42329328	NP_SSC_low_B3	No-plant control (inoculum in sterile substrate, no host)			SSC		low			B3	36466	0.005	Illumina NovaSeq 6000	
+SRR29709985	SAMN42329252	Lj_NS_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	low			B3	3974300	0.452	Illumina NovaSeq 6000	
+SRR29709987	SAMN42329250	Lj_NS_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	low			B1	2859307	0.371	Illumina NovaSeq 6000	
+SRR29709989	SAMN42329248	Lj_NS_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	high			B3	4398193	0.571	Illumina NovaSeq 6000	
+SRR29710006	SAMN42329233	Lj_LjSC_NOD_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	high			B4	4825958	0.647	Illumina NovaSeq 6000	
+SRR29710010	SAMN42329229	Lj_LjSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	low			B4	4613515	0.567	Illumina NovaSeq 6000	
+SRR29710019	SAMN42329173	Input_HvSC_B4	Input (inoculum sequenced directly, no plant)			HvSC					B4	2570922	0.336	Illumina NovaSeq 6000	
+SRR29710020	SAMN42329172	Input_HvSC_B3	Input (inoculum sequenced directly, no plant)			HvSC					B3	1437859	0.19	Illumina NovaSeq 6000	
+SRR29710045	SAMN42329150	Hv_SSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	high			B1	1508198	0.195	Illumina NovaSeq 6000	
+SRR29710048	SAMN42329147	Hv_NS_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	low			B2	225774	0.035	Illumina NovaSeq 6000	
+SRR29710049	SAMN42329146	Hv_NS_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	low			B1	1261860	0.174	Illumina NovaSeq 6000	
+SRR29710057	SAMN42329139	Hv_NS_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	low			B2	5205261	0.678	Illumina NovaSeq 6000	
+SRR29710066	SAMN42329023	At_LjSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	low			B2	2157248	0.227	Illumina NovaSeq 6000	
+SRR29710068	SAMN42329021	At_LjSC_ES_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	ES				B4	1970052	0.241	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710071	SAMN42329018	At_LjSC_ES_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	ES				B1	2981096	0.333	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710084	SAMN42329404	R1_Lj_GC3_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC3	B1	360312	0.058	Illumina NovaSeq 6000	
+SRR29710090	SAMN42329398	R1_Lj_GC1_SSC_RZ_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ		R1	GC1	B1	9584	0.002	Illumina NovaSeq 6000	
+SRR29710091	SAMN42329327	NP_SSC_low_B2	No-plant control (inoculum in sterile substrate, no host)			SSC		low			B2	5923	0.001	Illumina NovaSeq 6000	
+SRR29710098	SAMN42329321	NP_NS_low_GC2_B4	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC2	B4	55788	0.008	Illumina NovaSeq 6000	
+SRR29710102	SAMN42329317	NP_NS_low_GC1_B4	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC1	B4	186817	0.026	Illumina NovaSeq 6000	
+SRR29710105	SAMN42329315	NP_NS_low_GC1_B2	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC1	B2	70537	0.01	Illumina NovaSeq 6000	
+SRR29710106	SAMN42329314	NP_NS_low_GC1_B1	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC1	B1	113137	0.015	Illumina NovaSeq 6000	
+SRR29710122	SAMN42329062	At_SSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	high			B1	2471095	0.234	Illumina NovaSeq 6000	
+SRR29710124	SAMN42329060	At_NS_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	low			B3	276623	0.04	Illumina NovaSeq 6000	
+SRR29710127	SAMN42329057	At_NS_RZ_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	NS	RZ				B4	4176	0.001	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710132	SAMN42329053	At_NS_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	high			B4	97700	0.015	Illumina NovaSeq 6000	
+SRR29710133	SAMN42329052	At_NS_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	RZ	high			B3	32795	0.005	Illumina NovaSeq 6000	
+SRR29710137	SAMN42329048	At_NS_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	NS	ES	low			B3	4040618	0.442	Illumina NovaSeq 6000	
+SRR29710141	SAMN42329373	R1_Hv_GC3_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC3	B1	3668791	0.425	Illumina NovaSeq 6000	
+SRR29710145	SAMN42329369	R1_Hv_GC3_LjSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES		R1	GC3	B1	2422202	0.289	Illumina NovaSeq 6000	
+SRR29710146	SAMN42329368	R1_Hv_GC3_HvSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES		R1	GC3	B4	3656088	0.42	Illumina NovaSeq 6000	
+SRR29710151	SAMN42329365	R1_Hv_GC3_HvSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES		R1	GC3	B1	3263693	0.383	Illumina NovaSeq 6000	
+SRR29710152	SAMN42329364	R1_Hv_GC3_AtSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES		R1	GC3	B4	4309736	0.517	Illumina NovaSeq 6000	
+SRR29710164	SAMN42329353	R1_Hv_GC1_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC1	B2	2423732	0.307	Illumina NovaSeq 6000	
+SRR29710166	SAMN42329351	R1_At_GC2_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC2	B4	328802	0.062	Illumina NovaSeq 6000	
+SRR29710167	SAMN42329277	Lj_SSC_NOD_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	low			B4	901335	0.11	Illumina NovaSeq 6000	
+SRR29710170	SAMN42329275	Lj_SSC_NOD_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	low			B2	2321899	0.288	Illumina NovaSeq 6000	
+SRR29710172	SAMN42329273	Lj_SSC_NOD_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	high			B4	2970071	0.357	Illumina NovaSeq 6000	
+SRR29710182	SAMN42329265	Lj_SSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	high			B4	1055263	0.139	Illumina NovaSeq 6000	
+SRR29710191	SAMN42329256	Lj_NS_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	high			B3	88951	0.012	Illumina NovaSeq 6000	
+SRR29710193	SAMN42329255	Lj_NS_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	high			B2	133302	0.017	Illumina NovaSeq 6000	
+SRR29710196	SAMN42329204	Lj_HvSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	low			B3	1878908	0.231	Illumina NovaSeq 6000	
+SRR29710198	SAMN42329202	Lj_HvSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES	low			B1	936641	0.099	Illumina NovaSeq 6000	
+SRR29710203	SAMN42329197	Lj_AtSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	low			B4	3477674	0.453	Illumina NovaSeq 6000	
+SRR29710208	SAMN42329193	Lj_AtSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	high			B4	229696	0.032	Illumina NovaSeq 6000	
+SRR29710211	SAMN42329190	Lj_AtSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	high			B1	3258541	0.428	Illumina NovaSeq 6000	
+SRR29710213	SAMN42329188	Lj_AtSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	low			B3	2341514	0.294	Illumina NovaSeq 6000	
+SRR29710214	SAMN42329187	Lj_AtSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	low			B2	2182480	0.271	Illumina NovaSeq 6000	
+SRR29710217	SAMN42329185	Lj_AtSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	high			B4	2400973	0.339	Illumina NovaSeq 6000	
+SRR29710220	SAMN42329182	Lj_AtSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES	high			B1	3393701	0.464	Illumina NovaSeq 6000	
+SRR29710225	SAMN42329105	Hv_HvSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	high			B4	8110059	1.005	Illumina NovaSeq 6000	
+SRR29710230	SAMN42329100	Hv_AtSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	low			B3	34111	0.005	Illumina NovaSeq 6000	
+SRR29710239	SAMN42329092	Hv_AtSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	low			B3	2183297	0.269	Illumina NovaSeq 6000	
+SRR29710240	SAMN42329091	Hv_AtSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	low			B2	3301432	0.414	Illumina NovaSeq 6000	
+SRR29710243	SAMN42329088	Hv_AtSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	high			B3	3725668	0.49	Illumina NovaSeq 6000	
+SRR29710244	SAMN42329087	Hv_AtSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	high			B2	2529067	0.325	Illumina NovaSeq 6000	
+SRR29710245	SAMN42329086	Hv_AtSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES	high			B1	3050481	0.387	Illumina NovaSeq 6000	
+SRR29710262	SAMN42329384	R1_Lj_GC1_AtSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES		R1	GC1	B3	2246318	0.216	Illumina NovaSeq 6000	
+SRR29710269	SAMN42329377	R1_Hv_GC3_SSC_RZ_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ		R1	GC3	B1	9223	0.002	Illumina NovaSeq 6000	
+SRR29710275	SAMN42329300	NP_HvSC_low_B3	No-plant control (inoculum in sterile substrate, no host)			HvSC		low			B3	44502	0.006	Illumina NovaSeq 6000	
+SRR29710278	SAMN42329297	NP_HvSC_high_B4	No-plant control (inoculum in sterile substrate, no host)			HvSC		high			B4	92912	0.014	Illumina NovaSeq 6000	
+SRR29710279	SAMN42329296	NP_HvSC_high_B3	No-plant control (inoculum in sterile substrate, no host)			HvSC		high			B3	230312	0.033	Illumina NovaSeq 6000	
+SRR29710293	SAMN42329284	Lj_SSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	low			B3	7097739	0.888	Illumina NovaSeq 6000	
+SRR29710296	SAMN42329281	Lj_SSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	high			B4	2396232	0.311	Illumina NovaSeq 6000	
+SRR29710300	SAMN42329228	Lj_LjSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	low			B3	174589	0.024	Illumina NovaSeq 6000	
+SRR29710313	SAMN42329216	Lj_HvSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	high			B3	1557521	0.198	Illumina NovaSeq 6000	
+SRR29710314	SAMN42328991	At_HvSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	high			B2	1816884	0.194	Illumina NovaSeq 6000	
+SRR29710320	SAMN42329210	Lj_HvSC_NOD_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	low			B1	7891075	1.054	Illumina NovaSeq 6000	
+SRR29710323	SAMN42329207	Lj_HvSC_NOD_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	high			B2	2151800	0.265	Illumina NovaSeq 6000	
+SRR29710352	SAMN42329108	Hv_HvSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	low			B3	11471592	1.379	Illumina NovaSeq 6000	
+SRR29710359	SAMN42329078	At_SSC_RZ_HL_orig_B1	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	RZ				B1	199321	0.029	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710364	SAMN42329074	At_SSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	high			B1	68887	0.009	Illumina NovaSeq 6000	
+SRR29709934	SAMN42328974	At_AtSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	low			B1	1942180	0.212	Illumina NovaSeq 6000	
+SRR29709955	SAMN42329026	At_LjSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	RZ	high			B1	3974293	0.541	Illumina NovaSeq 6000	
+SRR29709963	SAMN42329346	R1_At_GC2_LjSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES		R1	GC2	B2	310491	0.03	Illumina NovaSeq 6000	
+SRR29709964	SAMN42329004	At_HvSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	high			B3	199774	0.029	Illumina NovaSeq 6000	
+SRR29709967	SAMN42329343	R1_At_GC2_HvSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES		R1	GC2	B4	749225	0.075	Illumina NovaSeq 6000	
+SRR29709973	SAMN42329337	R1_At_GC2_AtSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES		R1	GC2	B2	1506457	0.145	Illumina NovaSeq 6000	
+SRR29709981	SAMN42329330	R1_At_GC1_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES		R1	GC1	B1	1533452	0.162	Illumina NovaSeq 6000	
+SRR29709984	SAMN42329253	Lj_NS_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	low			B4	3209428	0.4	Illumina NovaSeq 6000	
+SRR29709986	SAMN42329251	Lj_NS_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	low			B2	3112893	0.413	Illumina NovaSeq 6000	
+SRR29709988	SAMN42329249	Lj_NS_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	high			B4	3243821	0.432	Illumina NovaSeq 6000	
+SRR29709990	SAMN42329247	Lj_NS_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	ES	high			B2	5419270	0.689	Illumina NovaSeq 6000	
+SRR29709998	SAMN42329240	Lj_LjSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	RZ	high			B3	12293947	1.582	Illumina NovaSeq 6000	
+SRR29710003	SAMN42328993	At_HvSC_ES_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	ES	high			B4	173048	0.019	Illumina NovaSeq 6000	
+SRR29710005	SAMN42329234	Lj_LjSC_NOD_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	NOD	low			B1	3184908	0.438	Illumina NovaSeq 6000	
+SRR29710018	SAMN42329174	Input_LjSC_B1	Input (inoculum sequenced directly, no plant)			LjSC					B1	1378086	0.203	Illumina NovaSeq 6000	
+SRR29710027	SAMN42328986	At_AtSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	low			B1	146761	0.023	Illumina NovaSeq 6000	
+SRR29710028	SAMN42328968	At_AtSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	high			B3	2374612	0.259	Illumina NovaSeq 6000	
+SRR29710034	SAMN42329160	Hv_SSC_RZ_high_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	high			B3	1615696	0.21	Illumina NovaSeq 6000	
+SRR29710035	SAMN42329159	Hv_SSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	RZ	high			B2	2108128	0.272	Illumina NovaSeq 6000	
+SRR29710037	SAMN42329157	Hv_SSC_ES_low_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	low			B4	9743670	1.196	Illumina NovaSeq 6000	
+SRR29710038	SAMN42329156	Hv_SSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	low			B3	561322	0.071	Illumina NovaSeq 6000	
+SRR29710041	SAMN42329154	Hv_SSC_ES_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES	low			B1	8324450	1.035	Illumina NovaSeq 6000	
+SRR29710047	SAMN42329148	Hv_NS_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	RZ	low			B3	346258	0.048	Illumina NovaSeq 6000	
+SRR29710056	SAMN42329140	Hv_NS_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	NS	ES	low			B3	255242	0.034	Illumina NovaSeq 6000	
+SRR29710070	SAMN42329019	At_LjSC_ES_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	LjSC	ES				B2	3976342	0.417	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710074	SAMN42328971	At_AtSC_ES_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	AtSC	ES				B2	2860057	0.306	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710076	SAMN42329014	At_LjSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	LjSC	ES	high			B1	2823117	0.318	Illumina NovaSeq 6000	
+SRR29710081	SAMN42329406	R1_Lj_GC3_SSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC3	B3	2735731	0.315	Illumina NovaSeq 6000	
+SRR29710087	SAMN42329401	R1_Lj_GC2_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC2	B2	4416051	0.537	Illumina NovaSeq 6000	
+SRR29710089	SAMN42329399	R1_Lj_GC1_SSC_RZ_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ		R1	GC1	B3	10541	0.003	Illumina NovaSeq 6000	
+SRR29710093	SAMN42329002	At_HvSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	high			B1	134386	0.02	Illumina NovaSeq 6000	
+SRR29710097	SAMN42329322	NP_SSC_high_B1	No-plant control (inoculum in sterile substrate, no host)			SSC		high			B1	56122	0.008	Illumina NovaSeq 6000	
+SRR29710103	SAMN42329316	NP_NS_low_GC1_B3	No-plant control, natural-soil inoculum			NS (natural soil)		low		GC1	B3	177819	0.025	Illumina NovaSeq 6000	
+SRR29710108	SAMN42329312	NP_NS_AM_low_B3	No-plant control, natural-soil inoculum			NS (natural soil)	AM	low			B3	294084	0.04	Illumina NovaSeq 6000	
+SRR29710116	SAMN42329305	NP_LjSC_high_B4	No-plant control (inoculum in sterile substrate, no host)			LjSC		high			B4	36068	0.005	Illumina NovaSeq 6000	
+SRR29710120	SAMN42329064	At_SSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	ES	high			B3	1671164	0.176	Illumina NovaSeq 6000	
+SRR29710129	SAMN42328975	At_AtSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	low			B2	2361472	0.276	Illumina NovaSeq 6000	
+SRR29710154	SAMN42329362	R1_Hv_GC3_AtSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	ES		R1	GC3	B2	3938584	0.451	Illumina NovaSeq 6000	
+SRR29710156	SAMN42329360	R1_Hv_GC2_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC2	B4	2946489	0.35	Illumina NovaSeq 6000	
+SRR29710158	SAMN42329358	R1_Hv_GC2_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC2	B2	874946	0.18	Illumina NovaSeq 6000	
+SRR29710159	SAMN42329357	R1_Hv_GC2_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC2	B1	2323792	0.28	Illumina NovaSeq 6000	
+SRR29710161	SAMN42329005	At_HvSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	HvSC	RZ	high			B4	135308	0.019	Illumina NovaSeq 6000	
+SRR29710165	SAMN42329352	R1_Hv_GC1_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC1	B1	3389840	0.388	Illumina NovaSeq 6000	
+SRR29710169	SAMN42328997	At_HvSC_ES_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	ES				B4	3101015	0.308	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710173	SAMN42329272	Lj_SSC_NOD_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	NOD	high			B3	1476951	0.159	Illumina NovaSeq 6000	
+SRR29710178	SAMN42329267	Lj_SSC_ES_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	low			B2	2171049	0.25	Illumina NovaSeq 6000	
+SRR29710180	SAMN42328996	At_HvSC_ES_HL_orig_B3	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	ES				B3	2430124	0.262	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710183	SAMN42329264	Lj_SSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	high			B3	603502	0.077	Illumina NovaSeq 6000	
+SRR29710184	SAMN42329263	Lj_SSC_ES_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES	high			B2	1435725	0.192	Illumina NovaSeq 6000	
+SRR29710188	SAMN42329259	Lj_NS_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	low			B2	159149	0.022	Illumina NovaSeq 6000	
+SRR29710189	SAMN42329258	Lj_NS_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	low			B1	189038	0.026	Illumina NovaSeq 6000	
+SRR29710190	SAMN42329257	Lj_NS_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	high			B4	23305	0.003	Illumina NovaSeq 6000	
+SRR29710195	SAMN42329254	Lj_NS_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	NS	RZ	high			B1	120601	0.016	Illumina NovaSeq 6000	
+SRR29710210	SAMN42329191	Lj_AtSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	RZ	high			B2	3322928	0.441	Illumina NovaSeq 6000	
+SRR29710228	SAMN42329102	Hv_HvSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	ES	high			B1	7132136	0.925	Illumina NovaSeq 6000	
+SRR29710232	SAMN42329098	Hv_AtSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	low			B1	336107	0.045	Illumina NovaSeq 6000	
+SRR29710236	SAMN42329095	Hv_AtSC_RZ_high_B2	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	AtSC	RZ	high			B2	394202	0.056	Illumina NovaSeq 6000	
+SRR29710246	SAMN42328978	At_AtSC_RZ_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	RZ	high			B1	46050	0.007	Illumina NovaSeq 6000	
+SRR29710250	SAMN42329395	R1_Lj_GC1_SSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC1	B2	1612843	0.2	Illumina NovaSeq 6000	
+SRR29710251	SAMN42329394	R1_Lj_GC1_SSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	ES		R1	GC1	B1	857817	0.178	Illumina NovaSeq 6000	
+SRR29710253	SAMN42329392	R1_Lj_GC1_LjSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES		R1	GC1	B3	2890209	0.259	Illumina NovaSeq 6000	
+SRR29710257	SAMN42329388	R1_Lj_GC1_HvSC_ES_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES		R1	GC1	B3	2074040	0.23	Illumina NovaSeq 6000	
+SRR29710258	SAMN42329387	R1_Lj_GC1_HvSC_ES_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	ES		R1	GC1	B2	3280856	0.308	Illumina NovaSeq 6000	
+SRR29710264	SAMN42329382	R1_Lj_GC1_AtSC_ES_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	AtSC	ES		R1	GC1	B1	2587761	0.279	Illumina NovaSeq 6000	
+SRR29710265	SAMN42329381	R1_Input_LjSC_2	Input (inoculum sequenced directly, no plant)			LjSC			R1			719718	0.135	Illumina NovaSeq 6000	second technical file
+SRR29710267	SAMN42329379	R1_Input_HvSC	Input (inoculum sequenced directly, no plant)			HvSC			R1			141319	0.028	Illumina NovaSeq 6000	
+SRR29710268	SAMN42329378	R1_Input_AtSC	Input (inoculum sequenced directly, no plant)			AtSC			R1			686881	0.131	Illumina NovaSeq 6000	
+SRR29710270	SAMN42329376	R1_Hv_GC3_SSC_ES_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	SSC	ES		R1	GC3	B4	748386	0.09	Illumina NovaSeq 6000	
+SRR29710271	SAMN42329007	At_HvSC_RZ_HL_orig_B2	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	HvSC	RZ				B2	95527	0.013	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710276	SAMN42329299	NP_HvSC_low_B2	No-plant control (inoculum in sterile substrate, no host)			HvSC		low			B2	114924	0.017	Illumina NovaSeq 6000	
+SRR29710277	SAMN42329298	NP_HvSC_low_B1	No-plant control (inoculum in sterile substrate, no host)			HvSC		low			B1	166624	0.025	Illumina NovaSeq 6000	
+SRR29710288	SAMN42329288	NP_AtSC_high_B3	No-plant control (inoculum in sterile substrate, no host)			AtSC		high			B3	87532	0.013	Illumina NovaSeq 6000	
+SRR29710292	SAMN42329285	Lj_SSC_RZ_low_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	SSC	RZ	low			B4	5877905	0.741	Illumina NovaSeq 6000	
+SRR29710305	SAMN42329224	Lj_LjSC_ES_high_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	LjSC	ES	high			B3	2034639	0.283	Illumina NovaSeq 6000	
+SRR29710309	SAMN42329220	Lj_HvSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	low			B3	435075	0.059	Illumina NovaSeq 6000	
+SRR29710310	SAMN42329219	Lj_HvSC_RZ_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	low			B2	911568	0.131	Illumina NovaSeq 6000	
+SRR29710311	SAMN42329218	Lj_HvSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	low			B1	88204	0.013	Illumina NovaSeq 6000	
+SRR29710312	SAMN42329217	Lj_HvSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	RZ	high			B4	1963931	0.255	Illumina NovaSeq 6000	
+SRR29710319	SAMN42329211	Lj_HvSC_NOD_low_B2	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	low			B2	8049550	1.049	Illumina NovaSeq 6000	
+SRR29710324	SAMN42329206	Lj_HvSC_NOD_high_B1	Reconstitution (host + inoculum, sterile substrate)	Lj	Lotus japonicus	HvSC	NOD	high			B1	3488051	0.366	Illumina NovaSeq 6000	
+SRR29710328	SAMN42329129	Hv_LjSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	RZ	high			B4	480241	0.069	Illumina NovaSeq 6000	
+SRR29710334	SAMN42329124	Hv_LjSC_ES_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	low			B3	1943638	0.249	Illumina NovaSeq 6000	
+SRR29710340	SAMN42329118	Hv_LjSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	LjSC	ES	high			B1	2797057	0.375	Illumina NovaSeq 6000	
+SRR29710342	SAMN42329116	Hv_HvSC_RZ_low_B3	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	low			B3	62211	0.009	Illumina NovaSeq 6000	
+SRR29710345	SAMN42329114	Hv_HvSC_RZ_low_B1	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	low			B1	129198	0.017	Illumina NovaSeq 6000	
+SRR29710346	SAMN42329113	Hv_HvSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	Hv	Hordeum vulgare	HvSC	RZ	high			B4	1984197	0.27	Illumina NovaSeq 6000	
+SRR29710360	SAMN42329077	At_SSC_RZ_high_B4	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	SSC	RZ	high			B4	2575	0.0	Illumina NovaSeq 6000	
+SRR29710369	SAMN42329069	At_SSC_ES_HL_orig_B4	Original natural-soil-grown plant (source of culture collection)	At	Arabidopsis thaliana	SSC	ES				B4	3206176	0.372	Illumina NovaSeq 6000	tokens 'HL_orig' meaning not confirmed in accessible preprint text
+SRR29710375	SAMN42328966	At_AtSC_ES_high_B1	Reconstitution (host + inoculum, sterile substrate)	At	Arabidopsis thaliana	AtSC	ES	high			B1	2582181	0.278	Illumina NovaSeq 6000	
