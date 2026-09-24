@@ -20,7 +20,7 @@
     },
     "anvi_run_hmms": {
         "run": true,
-        "threads": 32,
+        "threads": 16,
         "--also-scan-trnas": true,
         "--installed-hmm-profile": "",
         "--hmm-profile-dir": "",
@@ -38,14 +38,14 @@
     },
     "anvi_run_ncbi_cogs": {
         "run": true,
-        "threads": 32,
+        "threads": 16,
         "--cog-data-dir": "",
         "--temporary-dir-path": "",
         "--search-with": ""
     },
     "anvi_run_scg_taxonomy": {
         "run": true,
-        "threads": 32,
+        "threads": 16,
         "--scgs-taxonomy-data-dir": ""
     },
     "anvi_run_trna_scan": {
@@ -90,8 +90,8 @@
     },
     "megahit": {
         "--min-contig-len": 1000,
-        "--memory": 600000000000,
-        "threads": 32,
+        "--memory": 45000000000,
+        "threads": 16,
         "run": true,
         "conda_yaml": "",
         "conda_env": "",
@@ -345,7 +345,7 @@
         "SPLIT_PROFILES_DIR": "09_SPLIT_PROFILES-coasm56",
         "LOGS_DIR": "00_LOGS-coasm56"
     },
-    "max_threads": 32,
+    "max_threads": 16,
     "config_version": "4",
     "workflow_name": "metagenomics"
 }

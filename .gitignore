@@ -40,3 +40,6 @@ Module2_MetaG/session2_prep/COASM56-contigs-exported.fa
 Module2_MetaG/session2_prep/*.fai
 Module2_MetaG/m2s2_*.out
 Module2_MetaG/m2s2_*.err
+Module2_MetaG/coassembly56/megahit_probe/p*
+Module2_MetaG/coassembly56/megahit_probe/*.out
+Module2_MetaG/coassembly56/megahit_probe/*.err

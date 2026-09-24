@@ -1,19 +1,20 @@
 #!/bin/bash
 ### General options
-### -- specify queue --
-#BSUB -q hpc
-### -- set the job Name --
-#BSUB -J m2s2_coasm56
 ### -- co-assembly of ALL 56 host-depleted samples, then mapping, profiling and
-### merging of all 56 against it. One node: megahit is pinned to 600 GB
-### (--memory in config_coasm56.json), 32 slots x 22 GB = 704 GB reserved. --
-#BSUB -n 32
-#BSUB -R "span[hosts=1] rusage[mem=22GB]"
-#BSUB -M 22528MB
-### -- 72h is the queue maximum. Submit this script TWICE: the second time with
-### -w "ended(<first job id>)" so that a walltime kill is resumed by Snakemake
-### (it is a no-op if the first run finished). --
-#BSUB -W 72:00
+### merging of all 56 against it. Sized from MEGAHIT's own formula (minimum memory
+### = N/4 + 16n + sorting overhead; here N = 27.3 Gbp, n = 215.5M reads, so a floor
+### of ~10 GB) and its paper (soil, 252 Gbp: 260 GB minimum, i.e. ~1 GB/Gbp, a
+### worst case). Expected need ~15-30 GB; the request is 16 slots x 3.5 GB = 56 GB
+### with megahit capped at 45 GB. Small enough to start on the hpc queue quickly.
+### Not measured on this dataset: see coassembly56/megahit_probe/results.tsv. --
+#BSUB -q hpc
+#BSUB -J m2s2_coasm56
+#BSUB -n 16
+#BSUB -R "span[hosts=1] rusage[mem=3584MB]"
+#BSUB -M 3584MB
+### -- 48h walltime. If killed (walltime, or megahit out of memory), resubmit:
+### Snakemake resumes, but a killed megahit step restarts from scratch. --
+#BSUB -W 48:00
 ### -- set the email address --
 #BSUB -u josne@dtu.dk
 ### -- send notification at start --
@@ -44,7 +45,7 @@ if [ -n "$(ls -A .snakemake/locks 2>/dev/null)" ]; then
     anvi-run-workflow -w metagenomics -c config_coasm56.json --skip-dry-run -A --unlock --jobs 1
 fi
 
-anvi-run-workflow -w metagenomics -c config_coasm56.json --skip-dry-run -A --jobs 32
+anvi-run-workflow -w metagenomics -c config_coasm56.json --skip-dry-run -A --jobs 16
 
 EXIT_CODE=$?
 if [ ${EXIT_CODE} -ne 0 ]; then
