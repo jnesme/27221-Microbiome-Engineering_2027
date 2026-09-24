@@ -36,3 +36,7 @@ Module2_MetaG/instructor_test_run_final_verify/
 
 # Jupyter autosave checkpoints
 .ipynb_checkpoints/
+Module2_MetaG/session2_prep/COASM56-contigs-exported.fa
+Module2_MetaG/session2_prep/*.fai
+Module2_MetaG/m2s2_*.out
+Module2_MetaG/m2s2_*.err
