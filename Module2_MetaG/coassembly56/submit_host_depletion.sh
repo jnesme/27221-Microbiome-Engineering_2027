@@ -73,27 +73,9 @@ cut -f1,3 "${DIAG}/depletion_samples.tsv" \
     | xargs -P ${NPAR} -L 1 bash -c 'deplete_one "$0" "$1"'
 echo "xargs exit: $?"
 
-# --- summary + verification: output pairs must equal input - removed, mates in sync
+# --- summary + verification (raw FASTQ counts, see verify_depletion.sh)
 echo "verifying outputs..."
-seqkit stats -T -j 24 "${OUTDIR}"/*_1.fastq.gz "${OUTDIR}"/*_2.fastq.gz > "${DIAG}/depletion_out_stats.tsv" 2>/dev/null
-python3 - <<'EOF'
-import csv,os,sys
-base="/work3/josne/github/27221-Microbiome-Engineering_2027/Module2_MetaG/coassembly56"
-stats={r["file"].split("/")[-1]:int(r["num_seqs"].replace(",","")) for r in csv.DictReader(open(f"{base}/depletion_out_stats.tsv"),delimiter="\t")}
-bad=0
-with open(f"{base}/depletion_summary.tsv","w") as f:
-    f.write("run\talias\tmode\tpairs_in\tpairs_removed\tpct_removed\tpairs_out\tstatus\n")
-    for line in open(f"{base}/depletion_samples.tsv"):
-        run,alias,mode,n=line.rstrip("\n").split("\t"); n=int(n)
-        rp=f"{base}/depletion_tmp/{run}.removed"
-        if not os.path.exists(rp): f.write(f"{run}\t{alias}\t{mode}\t{n}\t\t\t\tMISSING\n"); bad+=1; continue
-        rem=int(open(rp).read()); o1=stats.get(f"{run}_1.fastq.gz"); o2=stats.get(f"{run}_2.fastq.gz")
-        ok = (o1==o2==n-rem)
-        if not ok: bad+=1
-        f.write(f"{run}\t{alias}\t{mode}\t{n}\t{rem}\t{100*rem/n:.2f}\t{o1}\t{'OK' if ok else 'MISMATCH'}\n")
-print("samples with problems:",bad)
-sys.exit(1 if bad else 0)
-EOF
+"${DIAG}/verify_depletion.sh" 24
 RC=$?
 echo "Job finished $(date); summary: ${DIAG}/depletion_summary.tsv; verification exit ${RC}"
 cat "${DIAG}/depletion_summary.tsv"
