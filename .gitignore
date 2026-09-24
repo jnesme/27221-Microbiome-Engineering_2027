@@ -21,3 +21,18 @@ Module2_MetaG/raw_reads_subsampled/
 
 # Instructor-only pipeline validation run, not course material
 Module2_MetaG/instructor_test_run/
+
+# Module 2 co-assembly prep: host-diagnostic scratch and depleted reads (large, regenerable)
+Module2_MetaG/coassembly56/host_diag/
+Module2_MetaG/coassembly56/depleted_reads/
+Module2_MetaG/coassembly56/depletion_tmp/
+Module2_MetaG/coassembly56/*.err
+Module2_MetaG/coassembly56/*.out
+Module2_MetaG/session2_prep/0*
+Module2_MetaG/session2_prep/.snakemake/
+Module2_MetaG/session2_prep/isolate_genomes/
+Module2_MetaG/session2_prep/REFERENCE-contigs-exported.fa
+Module2_MetaG/instructor_test_run_final_verify/
+
+# Jupyter autosave checkpoints
+.ipynb_checkpoints/

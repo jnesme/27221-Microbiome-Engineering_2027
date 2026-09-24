@@ -1,0 +1,7 @@
+run_accession	sample_alias	host	reads	nuclear_pct	organelle_pct	phase1ref_pct	organelle_and_phase1	nuclear_and_phase1	organelle_and_phase1_pct_of_organelle	nuclear_and_phase1_pct_of_nuclear
+SRR29710010	Lj_LjSC_ES_low_B4	Lj	1000000	82.23	3.94	11.55	203	28839	0.52	3.51
+SRR29709993	Lj_LjSC_RZ_low_B4	Lj	1000000	6.34	0.13	45.01	39	2191	3.01	3.45
+SRR29710002	Lj_LjSC_NOD_low_B3	Lj	1000000	7.21	0.24	68.10	30	2522	1.25	3.50
+SRR29710319	Lj_HvSC_NOD_low_B2	Lj	1000000	11.93	0.51	15.93	70	4216	1.36	3.54
+SRR29710222	Hv_HvSC_ES_low_B2	Hv	1000000	93.36	0.00	1.57	0	10533	0.00	1.13
+SRR29710348	Hv_HvSC_RZ_high_B2	Hv	1000000	13.18	0.00	25.55	0	1655	0.00	1.26
