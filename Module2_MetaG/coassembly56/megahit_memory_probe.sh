@@ -28,7 +28,7 @@ echo "subset: ${total} pairs"
 RC=$?
 peak_kb=$(awk '/Maximum resident/{print $NF}' "${WD}/time.txt")
 wall=$(awk '/Elapsed \(wall/{print $NF}' "${WD}/time.txt")
-seqkit stats -T "${WD}/asm/final.contigs.fa" 2>/dev/null | tail -1 | cut -f4,5,13 > "${WD}/contig_stats.txt"
+seqkit stats -T "${WD}/asm/final.contigs.fa" 2>/dev/null | tail -1 | cut -f4,5 > "${WD}/contig_stats.txt"
 printf "%s\t%s\t%s\t%s\t%s\t%s\t%s\n" "$P" "$total" "$T" "$((peak_kb/1024/1024))" "$wall" "$(cat ${WD}/contig_stats.txt | tr '\t' ' ')" "$FLAG" >> "${DIAG}/megahit_probe/results.tsv"
 echo "exit $RC, peak RSS $((peak_kb/1024)) MB, wall ${wall}"
 rm -rf "${WD}/reads" "${WD}/asm/intermediate_contigs"

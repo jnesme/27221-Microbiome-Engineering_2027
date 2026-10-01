@@ -1,1 +1,5 @@
-percent	pairs	threads	peak_rss_GB	wall	contigs_bp_N50
+percent	pairs	threads	peak_rss_GB	wall	n_contigs total_bp
+4	4310938	8	1	22:20.09	14262 38521274
+8	8621900	8	2	45:12.64	22747 69106013
+16	17243826	8	4	1:38:40	36492 114981032
+16	17243826	8	3	2:22:15	36492 114981032	0
