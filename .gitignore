@@ -43,3 +43,24 @@ Module2_MetaG/m2s2_*.err
 Module2_MetaG/coassembly56/megahit_probe/p*
 Module2_MetaG/coassembly56/megahit_probe/*.out
 Module2_MetaG/coassembly56/megahit_probe/*.err
+
+# Module 2 binning (SemiBin2/MetaBAT2/CONCOCT -> DAS_Tool): bin FASTAs and
+# derived intermediate tables, all regenerable from the committed scripts
+Module2_MetaG/session2_prep/binning/*.out
+Module2_MetaG/session2_prep/binning/*.err
+Module2_MetaG/session2_prep/binning/semibin2_full/
+Module2_MetaG/session2_prep/binning/semibin2_calib/
+Module2_MetaG/session2_prep/binning/metabat2_full/
+Module2_MetaG/session2_prep/binning/tnf_cov_manual/
+Module2_MetaG/session2_prep/binning/bin_comparison/*.txt
+Module2_MetaG/session2_prep/binning/bin_comparison/*.tsv
+Module2_MetaG/session2_prep/binning/bin_comparison/*.pkl
+Module2_MetaG/session2_prep/binning/metabat2_depth.txt
+Module2_MetaG/session2_prep/binning/metabat2_depth_anvio.txt
+Module2_MetaG/session2_prep/binning/metabat2_contig2bin.tsv
+Module2_MetaG/session2_prep/binning/semibin2_contig2bin.tsv
+Module2_MetaG/session2_prep/binning/tnf_cov_matrix_ge5kb.tsv
+Module2_MetaG/session2_prep/binning/tnf_cov_view_data_ge5kb.tsv
+Module2_MetaG/session2_prep/binning/tnf_cov_additional_layers_ge5kb.tsv
+Module2_MetaG/session2_prep/binning/tnf_cov_tree_ge5kb.newick
+Module2_MetaG/session2_prep/binning/tnf_cov_items_order_ge5kb.txt
